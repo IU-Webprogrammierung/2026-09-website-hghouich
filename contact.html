@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,67 @@
     <a href="index.html">
       <img alt="H.G" src="assets/images/Logo.png" width="120">
     </a>
-  <nav>
+  <nav aria-label="Hauptnavigation">
     <a href="index.html">Home</a>
     <a href="about.html">Über Mich</a>
     <a href="projects.html">Projekte</a>
     <a href="contact.html">Kontakt</a>
   </nav>
 </header>  
-
+<main>
+  <section class="contact-intro">
+<h1 class="heading1">Deine Vision. <br> Mein Skill.</h1>
+<p class="contact-me">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+  </section>
+  <form action="#" method="post">
+    <label for="fname">Vorname</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Vorname" required><br>
+     <label for="lname">Nachname</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Nachname" required><br>
+    <label for="email">E-Mail Adresse</label><br>
+    <input type="email" id="email" name="email" placeholder="E-Mail Adresse" required><br>
+    <label for="subject">Projekt-Kategorie</label><br>
+    
+    <select id="subject" name="subject" required>
+      <option value="" disabled selected>Kategorie Auswählen</option>
+      <option value="UX/UI & Webdesign">UX/UI & Webdesign</option>
+      <option value="Frontend Development">Frontend Development</option>
+      <option value="Graphic Design & Branding">Graphic Design & Branding</option>
+      <option value="3D / Motion Design">3D / Motion Design</option>
+      <option value="Sonstige Anfrage">Sonstige Anfrage</option>
+    </select><br>
+   
+    <label for="msg">Nachricht</label><br>
+    <textarea id="msg" name="Nachricht" rows="7" cols="40" placeholder="Nachricht schreiben..." required></textarea><br>
+    <button type="submit">Senden</button>
+  </form>
+  
+<aside>
+<h2 class="contacts-heading">Hier erreichst du mich persönlich:</h2>
+  <a href="mailto:ghouichhiba@gmail.com">
+  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+  ghouichhiba@gmail.com
+  </a><br>
+  <a href="https://www.linkedin.com/in/hiba-ghouich" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+Hiba Ghouich
+</a><br>
+<a href="https://www.instagram.com/hiba.sstudio" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+@hiba.sstudio
+</a>
+  </aside>
+</main>
 </body>
+
+<footer>
+  <a href="impressum.html">Impressum</a> 
+  <span aria-hidden="true" class="star">✦</span>
+  <a href="datenschutz.html">Datenschutz</a>
+  <p class="copyright">© 2026 Hebat-Allah Ghouich</p> 
+  <p class="copyright-content">Alle gezeigten Arbeiten, Designs, Fotografien und 3D-Renderings sind urheberrechtlich geschützt.</p>
+  <a href="#top">
+  <i class="fa-solid fa-circle-chevron-up"></i>
+  </a>
+</footer>
 </html>
