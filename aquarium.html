@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loagh App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">
+      <img alt="H.G" src="assets/images/Logo.png" width="120">
+    </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">Über Mich</a>
+    <a href="projects.html">Projekte</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
+</header>    
+
+<main>
+    <nav aria-label="breadcrumb">
+ <ol>
+    <li><a href="projects.html">Projekte</a></li>
+     <li><a href="3d-scenes.html">3D Scnese</a></li>
+    <li aria-current="page">Aquarium Szene</li>
+ </ol>
+</nav>
+<section class="Intro">
+<h1 class="projekt-Name">Aquarium Szene</h1>
+<p>Eine visuelle Explorationsstudie über räumliche Tiefe, Lichtbrechung und alltägliche Ästhetik im virtuellen Raum. <br> Diese 3D-Still-Life-Szenografie stellt das Zusammenspiel von Licht, Glas-Materialien und organischer Formgebung in den Mittelpunkt der Komposition. Umgeben von minimalistischen Designobjekten dient das zentrale Aquarium als Brennpunkt der Szene. Es reflektiert und bricht die warmen Lichtkegel der hängenden Leuchten sowie die kühlen Einfälle des Umgebungslichts physikalisch korrekt.  <br> Ziel der Arbeit war es, eine beruhigende, atmosphärische Raumstimmung zu schaffen, die die Grenzen zwischen digitaler Render-Präzision und klassischer Stillleben-Malerei fließend überschreitet.</p>
+</section>
+
+<h1>Szene</h1>
+<img class="mittig" src="assets/images/3D-Szene/01.jpg" alt="3D-Render einer Wohnzimmerszene mit Pendellampen, Aquarium, Discokugel und roter Vase auf einem Holztisch" width="1130" height="718">    
+
+<h2 class="projekt-Konzept">Prozess</h2>
+<p>Konzeption & Ideenskizze <br> Die visuelle Entwicklung des Projekts begann mit einer gezielten Layout-Skizze. Ziel dieser ersten Konzeptionsphase war es, die räumliche Anordnung der Hauptakteure: das zentrale Aquarium, die flankierende Keramikvase und die glänzende Metallkugel, harmonisch aufeinander abzustimmen, bevor die Modellierung in Blender erfolgte.</p>
+<div class="image-text">
+    <img class="konkurrenzanalyse" src="assets/images/3D-Szene/02.jpg" alt="Handgezeichnete Konzeptskizze der Aquarium-3D-Szene" width="624" height="373">  
+    <p>In der Skizze wurden gestalterische Entscheidungen vorab festgelegt: <br> Fokus & Blickführung: Die Platzierung des runden Aquariums als zentraler Fluchtpunkt der Komposition. <br> Balance & Kontraste: Das Wechselspiel zwischen organischen, weichen Formen (Glas und Vasen) und der harten, geometrischen Oberfläche der Kugel. <br> Lichtführung: Die grobe Ausrichtung der hängenden Spotlights, um bereits im Vorentwurf die spätere Lichtbrechung (Caustics) und Schattenbildung zu planen.</p>   
+</div>
+
+<img class="mittig" src="assets/images/3D-Szene/03.jpg" alt="3D-Render der 3D-Szene ohne Materialien und Texturen" width="1130" height="718">    
+
+<div class="3d-image-row">
+    <img class="app-mockups" src="assets/images/3D-Szene/04.jpg" alt="Nahaufnahme der 3D-gerenderten Discokugel mit Spiegelreflexionen" width="534" height="503">  
+    <img class="app-mockups" src="assets/images/3D-Szene/05.jpg" alt="Nahaufnahme der grün beleuchteten Pendellampen im 3D-Render" width="534" height="503">    
+    <img class="app-mockups" src="assets/images/3D-Szene/06.jpg" alt="Nahaufnahme der 3D-gerenderten Discokugel mit Spiegelreflexionen" width="534" height="503">  
+    <img class="app-mockups" src="assets/images/3D-Szene/07.jpg" alt="Nahaufnahme der grün beleuchteten Pendellampen im 3D-Render" width="534" height="503">    
+  </div>
+
+<div class="image-text">
+    <img class="app-mockups" src="assets/images/3D-Szene/08.jpg" alt="Blender Shader Node Editor für das Material der roten Vase" width="536" height="314">   
+    <img class="app-mockups" src="assets/images/3D-Szene/09.jpg" alt="Blender Shader Node Editor für das metallische Lampenmaterial" width="536" height="314">   
+    <p>Procedural Texture Stacking: Durch die Kombination und Überlagerung mehrerer prozeduraler Textur-Nodes (Musgrave, Wave und Noise) wird eine hochdetaillierte, organische Oberflächenstruktur ohne externe Bildtexturen erzeugt. <br> Dynamic Bump & Roughness Mapping: Die generierten Rauschmuster werden über ColorRamps und Bump-Nodespräzise auf den Roughness- sowie Normal-Eingang des Principled BSDF geleitet, um realistisch gebrochenes Licht und feine Oberflächenunebenheiten zu simulieren.</p>   
+    <p>Fresnel & Layer-Weight Integration: Die Einbindung einer Layer Weight (Fresnel)-Node steuert den Material-Glanz winkelabhängig, was besonders bei metallischen und gläsernen Reflexionen für physikalisch korrekte Kantenaufhellung sorgt. <br> Targeted Surface Micro-Bumping: Über ein skaliertes Noise-Muster und eine fein eingestellte Bump-Node (Strength: 0.279) erhält die Oberfläche feine Mikro-Substrukturen, die dem Render-Ergebnis haptische Tiefe verleihen.</p>   
+  </div>
+
+<img class="mittig" src="assets/images/3D-Szene/10.jpg" alt="Finaler 3D-Render der vollständigen Aquarium-Szene mit Lichteffekten" width="1130" height="718">    
+
+</main>
+
+<footer>
+  <a href="impressum.html">Impressum</a> 
+  <span aria-hidden="true" class="star">✦</span>
+  <a href="datenschutz.html">Datenschutz</a>
+  <p class="copyright">© 2026 Hebat-Allah Ghouich</p> 
+  <p class="copyright-content">Alle gezeigten Arbeiten, Designs, Fotografien und 3D-Renderings sind urheberrechtlich geschützt.</p>
+    <a href="#top" aria-label="Nach oben scrollen">
+    <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
+</footer>
+
+</body>
+</html>
