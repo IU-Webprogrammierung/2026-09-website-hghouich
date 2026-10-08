@@ -1,166 +1,181 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotografie</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="assets/js/loader.js"></script>
 </head>
 
 <body>
 
-<header>
-    <button id="theme-toggle" aria-label="Dark Mode umschalten">
-  <img src="assets/images/icon-sun.svg" id="icon-sun" alt="Sonnen-Symbol für den Light-Modus">
-  <img src="assets/images/icon-moon.svg" id="icon-moon" alt="Mond-Symbol für den Dark Mode">
-   </button>
-    <a href="index.html">
-      <img alt="H.G" src="assets/images/Logo.png" width="120">
-    </a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">Über Mich</a>
-    <a href="projects.html">Projekte</a>
-    <a href="contact.html">Kontakt</a>
-  </nav>
-</header>  
+    <header></header>
 
-<main>
- <nav aria-label="breadcrumb">
- <ol>
-    <li><a href="projects.html">Projekte</a></li>
-    <li aria-current="page">Fotografie</li>
- </ol>
-</nav>
-<h1 class="projekt-Name">Fotografie</h1>
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol>
+                <li><a href="projects.html">Projekte</a></li>
+                <li aria-current="page">Fotografie</li>
+            </ol>
+        </nav>
+        <h1 class="projekt-Name">Fotografie</h1>
 
-<div role="tablist">
-    <button id="tab-wildlife" role="tab" aria-selected="true" aria-controls="wildlife">Wild Life</button>
-    <button id="tab-architecture" role="tab" aria-selected="false" aria-controls="architecture">Architecture</button>
-    <button id="tab-nature" role="tab" aria-selected="false" aria-controls="nature">Nature</button>
-</div>
+        <div role="tablist">
+            <button id="tab-wildlife" role="tab" aria-selected="true" aria-controls="wildlife">Wild Life</button>
+            <button id="tab-architecture" role="tab" aria-selected="false"
+                aria-controls="architecture">Architecture</button>
+            <button id="tab-nature" role="tab" aria-selected="false" aria-controls="nature">Nature</button>
+        </div>
 
-<!-- Hinweis: In Phase 1 sind alle Tab-Inhalte sichtbar. Die Tab-Umschaltung wird in Phase 3 mit JavaScript implementiert. -->
+        <!-- Hinweis: In Phase 1 sind alle Tab-Inhalte sichtbar. Die Tab-Umschaltung wird in Phase 3 mit JavaScript implementiert. -->
 
-<section role="tabpanel" id="wildlife" aria-labelledby="tab-wildlife">
+        <section role="tabpanel" id="wildlife" aria-labelledby="tab-wildlife">
 
-<div class="hero-photo">    
-<img src="assets/images/Fotografie/wildlife/01.jpg" alt="Elefant" width="1199" height="809">
-</div>
+            <div class="hero-photo">
+                <img src="assets/images/Fotografie/wildlife/01.jpg" alt="Elefant" width="1199" height="809">
+            </div>
 
-<div class="photo-image-text">
-    <img src="assets/images/Fotografie/wildlife/02.jpg" alt="Tukane" width="486" height="532">
-    <p>Jedes Tier hat eine Persönlichkeit. Der Tukan mit seinen leuchtenden Farben, der Elefant mit seiner ruhigen Präsenz. Ich versuche genau diesen Moment einzufangen, in dem ein Tier einfach es selbst ist.</p>
-</div>
+            <div class="photo-image-text">
+                <img src="assets/images/Fotografie/wildlife/02.jpg" alt="Tukane" width="486" height="532">
+                <p>Jedes Tier hat eine Persönlichkeit. Der Tukan mit seinen leuchtenden Farben, der Elefant mit seiner
+                    ruhigen Präsenz. Ich versuche genau diesen Moment einzufangen, in dem ein Tier einfach es selbst
+                    ist.</p>
+            </div>
 
-<div class="photo-couple1">
-<img src="assets/images/Fotografie/wildlife/03.jpg" alt="Krauskopfpelikane" width="596" height="640">
-<img src="assets/images/Fotografie/wildlife/04.jpg" alt="Giraffe" width="390" height="640"> 
-</div>
+            <div class="photo-couple1">
+                <img src="assets/images/Fotografie/wildlife/03.jpg" alt="Krauskopfpelikane" width="596" height="640">
+                <img src="assets/images/Fotografie/wildlife/04.jpg" alt="Giraffe" width="390" height="640">
+            </div>
 
-<div class="photo-thumbnails">
-    <img src="assets/images/Fotografie/wildlife/05.jpg" alt="Tiger" width="1199" height="690">
-    <img src="assets/images/Fotografie/wildlife/06.jpg" alt="Muuflon" width="255" height="225">
-    <img src="assets/images/Fotografie/wildlife/07.jpg" alt="Schneeleopard" width="255" height="225">
-    <img src="assets/images/Fotografie/wildlife/08.jpg" alt="Schildkröte" width="255" height="225">
-    <img src="assets/images/Fotografie/wildlife/09.jpg" alt="Affe" width="255" height="225">
-</div>
+            <div class="photo-thumbnails">
+                <img src="assets/images/Fotografie/wildlife/05.jpg" alt="Tiger" width="1199" height="690">
+                <img src="assets/images/Fotografie/wildlife/06.jpg" alt="Muuflon" width="255" height="225">
+                <img src="assets/images/Fotografie/wildlife/07.jpg" alt="Schneeleopard" width="255" height="225">
+                <img src="assets/images/Fotografie/wildlife/08.jpg" alt="Schildkröte" width="255" height="225">
+                <img src="assets/images/Fotografie/wildlife/09.jpg" alt="Affe" width="255" height="225">
+            </div>
 
-<div class="photo-image-text">
-    <img src="assets/images/Fotografie/wildlife/10.jpg" alt="Clownfisch" width="566" height="651">
-    <p>Intensive Farben, winzige Lebewesen, ein kurzer Moment des Staunens. <br> Mehr braucht es manchmal nicht.</p>
-</div>
+            <div class="photo-image-text">
+                <img src="assets/images/Fotografie/wildlife/10.jpg" alt="Clownfisch" width="566" height="651">
+                <p>Intensive Farben, winzige Lebewesen, ein kurzer Moment des Staunens. <br> Mehr braucht es manchmal
+                    nicht.</p>
+            </div>
 
-<div class="closing-photo">
-<img src="assets/images/Fotografie/wildlife/11.jpg" alt="Fischreiher-Silhouette" width="1199" height="809">
-</div>
+            <div class="closing-photo">
+                <img src="assets/images/Fotografie/wildlife/11.jpg" alt="Fischreiher-Silhouette" width="1199"
+                    height="809">
+            </div>
 
-</section>
+        </section>
 
-<br>
+        <br>
 
-<section role="tabpanel" id="Architecture" aria-labelledby="tab-architecture">
+        <section role="tabpanel" id="Architecture" aria-labelledby="tab-architecture">
 
-<div class="hero-photo">    
-<img src="assets/images/Fotografie/Architecture/12.jpg" alt="Historisches Gebäude mit roter Fassade und modernem Gerüst unter blauem Himmel" width="1199" height="809">
-</div>
+            <div class="hero-photo">
+                <img src="assets/images/Fotografie/Architecture/12.jpg"
+                    alt="Historisches Gebäude mit roter Fassade und modernem Gerüst unter blauem Himmel" width="1199"
+                    height="809">
+            </div>
 
-<div class="photo-image-text">
-    <img src="assets/images/Fotografie/Architecture/13.jpg" alt="Historische Gebäudefassaden in Leipzig von unten fotografiert" width="486" height="532">
-    <p>Gebäude erzählen von Zeit. Ich fotografiere Fassaden, Symmetrien und Details, die im Vorbeigehen unsichtbar bleiben. Ein anderer Blickwinkel verändert alles.</p>
-</div>
+            <div class="photo-image-text">
+                <img src="assets/images/Fotografie/Architecture/13.jpg"
+                    alt="Historische Gebäudefassaden in Leipzig von unten fotografiert" width="486" height="532">
+                <p>Gebäude erzählen von Zeit. Ich fotografiere Fassaden, Symmetrien und Details, die im Vorbeigehen
+                    unsichtbar bleiben. Ein anderer Blickwinkel verändert alles.</p>
+            </div>
 
-<div class="photo-couple1">
-<img src="assets/images/Fotografie/Architecture/14.jpg" alt="Ornamentale Fassade eines historischen Gründerzeitgebäudes" width="596" height="640">
-<img src="assets/images/Fotografie/Architecture/15.jpg" alt="Historisches Gebäude mit Kuppel und klassischer Architektur" width="390" height="640"> 
-</div>
+            <div class="photo-couple1">
+                <img src="assets/images/Fotografie/Architecture/14.jpg"
+                    alt="Ornamentale Fassade eines historischen Gründerzeitgebäudes" width="596" height="640">
+                <img src="assets/images/Fotografie/Architecture/15.jpg"
+                    alt="Historisches Gebäude mit Kuppel und klassischer Architektur" width="390" height="640">
+            </div>
 
-<div class="photo-thumbnails">
-    <img src="assets/images/Fotografie/Architecture/16.jpg" alt="Frankfurter Baustelle mit Kränen und modernen Hochhäusern im Bau" width="1199" height="690">
-    <img src="assets/images/Fotografie/Architecture/17.jpg" alt="Gebäudedetail bei Nacht" width="255" height="225">
-    <img src="assets/images/Fotografie/Architecture/18.jpg" alt="Modernes Gebäude mit geometrischer schwarzer Fassade" width="255" height="225">
-    <img src="assets/images/Fotografie/Architecture/19.jpg" alt="Modernes Gebäude mit markanter Dachkante" width="255" height="225">
-    <img src="assets/images/Fotografie/Architecture/20.jpg" alt="Straßenschild 40 km/h vor urbaner Kulisse" width="255" height="225">
-</div>
+            <div class="photo-thumbnails">
+                <img src="assets/images/Fotografie/Architecture/16.jpg"
+                    alt="Frankfurter Baustelle mit Kränen und modernen Hochhäusern im Bau" width="1199" height="690">
+                <img src="assets/images/Fotografie/Architecture/17.jpg" alt="Gebäudedetail bei Nacht" width="255"
+                    height="225">
+                <img src="assets/images/Fotografie/Architecture/18.jpg"
+                    alt="Modernes Gebäude mit geometrischer schwarzer Fassade" width="255" height="225">
+                <img src="assets/images/Fotografie/Architecture/19.jpg" alt="Modernes Gebäude mit markanter Dachkante"
+                    width="255" height="225">
+                <img src="assets/images/Fotografie/Architecture/20.jpg" alt="Straßenschild 40 km/h vor urbaner Kulisse"
+                    width="255" height="225">
+            </div>
 
-<div class="photo-image-text">
-    <img src="assets/images/Fotografie/Architecture/21.jpg" alt="Modernes Glasshochhaus von unten fotografiert" width="566" height="651">
-    <p>Glas, Stahl, Perspektive. Moderne Architektur hat eine eigene Sprache und ich versuche sie so zu fotografieren, dass man sie zum ersten Mal wirklich sieht.</p>
-</div>
+            <div class="photo-image-text">
+                <img src="assets/images/Fotografie/Architecture/21.jpg"
+                    alt="Modernes Glasshochhaus von unten fotografiert" width="566" height="651">
+                <p>Glas, Stahl, Perspektive. Moderne Architektur hat eine eigene Sprache und ich versuche sie so zu
+                    fotografieren, dass man sie zum ersten Mal wirklich sieht.</p>
+            </div>
 
-<div class="closing-photo">
-<img src="assets/images/Fotografie/Architecture/22.jpg" alt="Frankfurter Skyline aus der Vogelperspektive bei bewölktem Himmel" width="1199" height="809">
-</div>
+            <div class="closing-photo">
+                <img src="assets/images/Fotografie/Architecture/22.jpg"
+                    alt="Frankfurter Skyline aus der Vogelperspektive bei bewölktem Himmel" width="1199" height="809">
+            </div>
 
-</section>
+        </section>
 
-<section role="tabpanel" id="nature" aria-labelledby="tab-nature">
+        <section role="tabpanel" id="nature" aria-labelledby="tab-nature">
 
-<div class="hero-photo">    
-<img src="assets/images/Fotografie/Nature/23.jpg" alt="Märchenhaftes Cottage am Teich mit Pelikanen auf einem Baumstamm im Herbst" width="1199" height="809">
-</div>
+            <div class="hero-photo">
+                <img src="assets/images/Fotografie/Nature/23.jpg"
+                    alt="Märchenhaftes Cottage am Teich mit Pelikanen auf einem Baumstamm im Herbst" width="1199"
+                    height="809">
+            </div>
 
-<div class="photo-image-text">
-    <img src="assets/images/Fotografie/Nature/24.jpg" alt="Rotkehlchen am Wasser mit blauem Hintergrund" width="486" height="532">
-    <p>Natur-Fotografie bedeutet für mich, innezuhalten und wirklich hinzuschauen. Stilles Wasser, üppiges Grün, Tiere in ihrer Umgebung.<br> Ich fotografiere das, was oft übersehen wird, und gebe ihm Raum.</p>
-</div>
+            <div class="photo-image-text">
+                <img src="assets/images/Fotografie/Nature/24.jpg" alt="Rotkehlchen am Wasser mit blauem Hintergrund"
+                    width="486" height="532">
+                <p>Natur-Fotografie bedeutet für mich, innezuhalten und wirklich hinzuschauen. Stilles Wasser, üppiges
+                    Grün, Tiere in ihrer Umgebung.<br> Ich fotografiere das, was oft übersehen wird, und gebe ihm Raum.
+                </p>
+            </div>
 
-<div class="photo-couple1">
-<img src="assets/images/Fotografie/Nature/25.jpg" alt="Kanadagans schwimmt auf ruhigem Wasser" width="596" height="640">
-<img src="assets/images/Fotografie/Nature/26.jpg" alt="Nahaufnahme einer Baumhöhle umgeben von grünen Blättern" width="390" height="640"> 
-</div>
+            <div class="photo-couple1">
+                <img src="assets/images/Fotografie/Nature/25.jpg" alt="Kanadagans schwimmt auf ruhigem Wasser"
+                    width="596" height="640">
+                <img src="assets/images/Fotografie/Nature/26.jpg"
+                    alt="Nahaufnahme einer Baumhöhle umgeben von grünen Blättern" width="390" height="640">
+            </div>
 
-<div class="photo-thumbnails">
-    <img src="assets/images/Fotografie/Nature/27.jpg" alt="Parklandschaft mit alten Bäumen und blauem Himmel" width="1199" height="690">
-    <img src="assets/images/Fotografie/Nature/28.jpg" alt="Brücke über einen ruhigen Fluss" width="255" height="225">
-    <img src="assets/images/Fotografie/Nature/30.jpg" alt="Naturweg am Wasser mit üppigem Grün" width="255" height="225">
-    <img src="assets/images/Fotografie/Nature/32.jpg" alt="Korallenriff-Aquarium voller orangefarbener Seeanemonen und lebhafter Clownfische." width="255" height="225">
-    <img src="assets/images/Fotografie/Nature/33.jpg" alt="Löwenzahn-Pusteblume" width="255" height="225">
-</div>
-<div class="photo-image-text">
-     <img src="assets/images/Fotografie/Nature/34.jpg" alt="Gruppe Krauskopfpelikane auf nebligem See umgeben von Bäumen" width="566" height="651">
-    <p>Wasser hat eine besondere Ruhe. Ob Schwan, Ente oder der Widerschein der Bäume auf der Oberfläche, ich suche die stillen Momente, die in der Hektik des Alltags leicht untergehen.</p>
-</div>
+            <div class="photo-thumbnails">
+                <img src="assets/images/Fotografie/Nature/27.jpg"
+                    alt="Parklandschaft mit alten Bäumen und blauem Himmel" width="1199" height="690">
+                <img src="assets/images/Fotografie/Nature/28.jpg" alt="Brücke über einen ruhigen Fluss" width="255"
+                    height="225">
+                <img src="assets/images/Fotografie/Nature/30.jpg" alt="Naturweg am Wasser mit üppigem Grün" width="255"
+                    height="225">
+                <img src="assets/images/Fotografie/Nature/32.jpg"
+                    alt="Korallenriff-Aquarium voller orangefarbener Seeanemonen und lebhafter Clownfische." width="255"
+                    height="225">
+                <img src="assets/images/Fotografie/Nature/33.jpg" alt="Löwenzahn-Pusteblume" width="255" height="225">
+            </div>
+            <div class="photo-image-text">
+                <img src="assets/images/Fotografie/Nature/34.jpg"
+                    alt="Gruppe Krauskopfpelikane auf nebligem See umgeben von Bäumen" width="566" height="651">
+                <p>Wasser hat eine besondere Ruhe. Ob Schwan, Ente oder der Widerschein der Bäume auf der Oberfläche,
+                    ich suche die stillen Momente, die in der Hektik des Alltags leicht untergehen.</p>
+            </div>
 
-<div class="closing-photo">
-<img src="assets/images/Fotografie/Nature/35.jpg" alt="zwei Pelikane, die auf einer hellen Steininsel in einem von dichten Bäumen umgebenen Gewässer ruhen" width="1199" height="809">
-</div>
+            <div class="closing-photo">
+                <img src="assets/images/Fotografie/Nature/35.jpg"
+                    alt="zwei Pelikane, die auf einer hellen Steininsel in einem von dichten Bäumen umgebenen Gewässer ruhen"
+                    width="1199" height="809">
+            </div>
 
-</section>
+        </section>
 
-</main>
+    </main>
 
-<footer>
-  <a href="impressum.html">Impressum</a> 
-  <span aria-hidden="true" class="star">✦</span>
-  <a href="datenschutz.html">Datenschutz</a>
-  <p class="copyright">© 2026 Hebat-Allah Ghouich</p> 
-  <p class="copyright-content">Alle gezeigten Arbeiten, Designs, Fotografien und 3D-Renderings sind urheberrechtlich geschützt.</p>
-    <a href="#top" aria-label="Nach oben scrollen">
-    <i class="fa-solid fa-circle-chevron-up"></i>
-    </a>
-</footer>
+    <footer></footer>
 
 </body>
+
 </html>
