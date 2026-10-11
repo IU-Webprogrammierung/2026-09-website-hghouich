@@ -1,0 +1,70 @@
+/*fonts import*/
+@import url('switzer.css');
+@import url('amulya.css');
+
+
+/*CSS Custom Properties*/
+
+/*fonts*/
+:root {
+--font-heading-primary: 'Switzer-Extrabold', sans-serif;
+--font-sub-heading: 'Switzer-Variable', sans-serif; 
+--font-body: 'Switzer-Variable', sans-serif; 
+--font-heading-secondary: 'Amulya-Variable', sans-serif;
+}
+
+/*colors*/
+:root {
+--primary-color-brik-ember: #BD0000;
+--primary-color-burnt-peach: #EF6F48;
+--primary-color-eggshell: #F2EDDC;
+--primary-color-carbon-black: #191919;
+--secondary-color-soft-linen: #E2E0D7;
+--secondary-color-old-lace: #FFF4E6; bleed:50%; 
+--secondary-color-graphite: #3A3938;
+--secondary-color-bright-snow: #F9F9F9;
+}
+
+/*8-point-grid-system*/
+:root {
+--space-1: 0.5rem;     /* 8px */
+--space-2: 1rem;       /* 16px */
+--space-3: 1.5rem;     /* 24px */
+--space-4: 2rem;       /* 32px */
+--space-5: 2.5rem;     /* 40px */
+--space-6: 3rem;       /* 48px */
+--space-7: 3.5rem;     /* 52px */
+--space-8: 4rem;       /* 64px */
+--space-9: 4.5rem;     /* 72px */
+--space-10: 5rem;      /* 80px */
+--space-12: 6rem;      /* 88px */
+--space-13: 6.5rem;    /* 96px */
+--space-14: 7rem;      /* 112px */
+--space-16: 8rem;      /* 128px */
+--space-18: 9rem;      /* 144px */
+--space-20: 10rem;     /* 160px */
+--space-24: 12rem;     /* 192px */
+--space-32: 16rem;     /* 256px */
+}
+
+/*layout-grid*/
+
+:root {
+  --grid-margin-mobile: 1rem;      /* 16px */
+  --grid-margin-tablet: 3.5rem;    /* 56px */
+  --grid-margin-desktop: 7.5rem;   /* 120px */
+  --grid-margin-large: 10rem;      /* 160px */
+
+  --grid-gutter-mobile: 0.5rem;    /* 8px */
+  --grid-gutter-tablet: 1rem;      /* 16px */
+  --grid-gutter-desktop: 1.5rem;   /* 24px */
+  --grid-gutter-large: 2rem;       /* 32px */
+}
+
+  /* Border Radius */
+ :root {
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 16px;
+  --radius-full: 9999px;
+ }
