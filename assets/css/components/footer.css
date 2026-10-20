@@ -1,0 +1,35 @@
+.footer {
+        font-family: var(--font-body);
+        position: absolute;
+        bottom: 2%;
+        padding-top: 0;
+        margin-top: 0;
+        padding-left: 0;
+        font-size: var(--fs-small);
+    }
+
+    .copyright {
+        color: var(--primary-color-brik-ember);
+        padding-top: var(--space-4);
+        font-size: var(--fs-caption);
+    }
+
+    .copyright-content {
+        color: var(--primary-color-brik-ember);
+        font-size: var(--fs-caption);
+    }
+
+    .copyright,
+    .copyright-content {
+        margin: 0rem;
+    }
+
+    .legal {
+        color: var(--primary-color-brik-ember);
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .legal-star {
+        color: var(--primary-color-burnt-peach);
+    }
