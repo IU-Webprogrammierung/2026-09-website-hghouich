@@ -46,9 +46,13 @@
     white-space: nowrap;
     text-decoration: none !important;
     color: var(--primary-color-brik-ember);
-    justify-content: end;
-
+    font-size: var(--fs-body-small);
 }
+
+.global-navigation a:hover {
+        color: var(--primary-color-burnt-peach);
+        transition: color 0.1s ease
+    }
 
 .header-brand {
     justify-content: flex-start;
@@ -61,8 +65,19 @@
 }
 
 .header-right {
-    display: flex;
+    display:flex;
     align-items: center;
-    gap: var(--space-2);
     flex: 1;
+}
+
+ .global-navigation {
+        margin-left: clamp(4rem, 1vw,4rem);
+        height: clamp(3.5rem, 4vh, 4rem);
+        align-items: center;
+        justify-content: start;
+        gap: clamp(12rem, 10vw, 16rem);
+        flex: 1;
+    }
+.site-header {
+padding-left: clamp(3rem, 3vw, 5rem);
 }
