@@ -7,12 +7,32 @@ loadComponent(`header`, `components/header.html`).then(() => {
   navLinks.forEach(link => {
     if (link.href === window.location.href) {
       link.classList.add('active');
+
+      loadComponent('header', 'components/header.html').then(() => {
+  // Active Nav Link
+  const navLinks = document.querySelectorAll('.global-navigation a');
+  navLinks.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    }
+  });
+
+  // Hamburger-Menü
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeBtn = document.getElementById('mobile-close');
+
+  hamburger?.addEventListener('click', () => mobileMenu.classList.add('open'));
+  closeBtn?.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+});
     }
   });
 });
 loadComponent(`footer`, `components/footer.html`);
-
-
 
 
 async function loadComponent(selector, path) {
@@ -30,3 +50,5 @@ async function loadComponent(selector, path) {
     console.error(`Fehler beim Laden: ${path}`, error);
   }
 }
+
+
