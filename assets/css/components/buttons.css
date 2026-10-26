@@ -1,36 +1,40 @@
- 
-     .btn {
-        padding: 0.75rem 1.5rem;
-        border-radius: var(--radius-full);
-        font-weight: 200;
-        text-decoration: none;
-        cursor: pointer;
-        transition: opacity 0.3s ease;
-        font-family: var(--font-body);
-    }
+ .btn {
+     padding: 0.75rem 1.5rem;
+     border-radius: var(--radius-full);
+     font-weight: 200;
+     text-decoration: none;
+     cursor: pointer;
+     transition: opacity 0.3s ease;
+     font-family: var(--font-body);
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     
+ }
 
-      .btn-primary {
-        background: var(--primary-color-brik-ember);
-        color: var(--primary-color-eggshell);
-        border: none;
-    }
+ .btn-primary {
+     background: var(--primary-color-brick-ember);
+     color: var(--primary-color-eggshell);
+     border: none;
+ }
 
-    .btn-outline {
-        background: transparent;
-        color: var(--primary-color-carbon-black);
-        border: 1.5px solid var(--primary-color-brik-ember);
-        width: 9rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+ .btn-outline {
+     background: transparent;
+     color: var(--primary-color-carbon-black);
+     border: 1.5px solid var(--primary-color-brick-ember);
+     border-radius: var(--radius-full);
+     width: 9rem;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
 
-       .btn-outline:hover {
-        border-color: var(--primary-color-burnt-peach);
-    }
+ .btn-outline:hover {
+     border-color: var(--primary-color-burnt-peach);
+ }
 
-    .btn-primary:hover {
-        background-color: var(--primary-color-burnt-peach);
-    }
+ .btn-primary:hover {
+     background-color: var(--primary-color-burnt-peach);
+ }
 
