@@ -9,13 +9,13 @@
     }
 
     .copyright {
-        color: var(--primary-color-brik-ember);
+        color: var(--primary-color-brick-ember);
         padding-top: var(--space-4);
         font-size: var(--fs-caption);
     }
 
     .copyright-content {
-        color: var(--primary-color-brik-ember);
+        color: var(--primary-color-brick-ember);
         font-size: var(--fs-caption);
     }
 
@@ -25,7 +25,7 @@
     }
 
     .legal {
-        color: var(--primary-color-brik-ember);
+        color: var(--primary-color-brick-ember);
         margin-top: 0;
         padding-top: 0;
     }
