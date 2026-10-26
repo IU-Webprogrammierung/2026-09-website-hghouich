@@ -30,20 +30,20 @@
 
 /* Typography */
 :root {
-    --fs-caption: clamp(0.75rem, calc(0.71rem + 0.17vw), 0.875rem);
-    --fs-small: clamp(0.875rem, calc(0.84rem + 0.17vw), 1rem);
-    --fs-body-small: clamp(0.9rem, clac(0.89rem + 17vw), 1.075rem);
-    --fs-body: clamp(1rem, calc(0.96rem + 0.17vw), 1.125rem);
-    --fs-body-lg: clamp(1.125rem, calc(1.09rem + 0.17vw), 1.25rem);
-    --fs-subheading: clamp(1.25rem, calc(1.17rem + 0.35vw), 1.5rem);
-    --fs-h3: clamp(1.5rem, calc(1.34rem + 0.69vw), 2rem);
-    --fs-h2: clamp(2rem, calc(1.84rem + 0.69vw), 2.5rem);
-    --fs-hero: clamp(1.8rem, calc(1.14rem + 2.92vw), 3.6rem);
+  --fs-caption: clamp(0.75rem, calc(0.71rem + 0.17vw), 0.875rem);
+--fs-small: clamp(0.5rem, calc(0.84rem + 0.17vw), 1rem);
+--fs-body-small: clamp(0.9rem, calc(0.89rem + 0.17vw), 1.075rem);
+--fs-body: clamp(1rem, calc(0.96rem + 0.17vw), 1.125rem);
+--fs-body-lg: clamp(1.125rem, calc(1.09rem + 0.17vw), 1.25rem);
+--fs-subheading: clamp(1.25rem, calc(0.89rem + 1.8vw), 2.5rem);
+--fs-h3: clamp(1.5rem, calc(1.34rem + 0.69vw), 2rem);
+--fs-h2: clamp(2rem, calc(1.84rem + 0.69vw), 2.5rem);
+--fs-hero: clamp(1.9rem, calc(1.20rem + 2.92vw), 3.6rem);
 }
 
 /*colors*/
 :root {
-    --primary-color-brik-ember: #BD0000;
+    --primary-color-brick-ember: #BD0000;
     --primary-color-burnt-peach: #ef6439;
     --primary-color-eggshell: #F2EDDC;
     --primary-color-carbon-black: #191919;
@@ -156,12 +156,13 @@ html {
 
 .logo {
     margin-top: var(--space-3);
-    width: clamp(7rem, 1vw, 7.8rem);
-    height: clamp(7rem, 1vw, 7.8rem);
+    width: clamp(5rem, 1vw, 7.8rem);
+    height: clamp(5rem, 1vw, 7.8rem);
 }
 
 
 /* decor element */
 .star {
-    color: var(--primary-color-brik-ember);
+    color: var(--primary-color-brick-ember);
 }
+
