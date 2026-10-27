@@ -1,0 +1,99 @@
+/* base style */
+
+h1 {
+    font-family: var(--font-heading-primary);
+    color: var(--primary-color-carbon-black);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-12);
+    font-size: var(--fs-h2);
+}
+
+h2 {
+    font-family: var(--font-heading-secondary);
+    color: var(--primary-color-burnt-peach);
+    margin-bottom: var(--space-6);
+    padding-top: var(--space-2);
+}
+
+h3 {
+    font-family: var(--font-heading-secondary);
+    font-weight: 600;
+    color: var(--primary-color-brick-ember);
+    margin-bottom: var(--space-4);
+    margin-top: var(--space-8);
+}
+
+.text-group {
+    padding-top: var(--space-1);
+    font-family: var(--font-body);
+    color: var(--primary-color-carbon-black);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-1) var(--space-8);
+  margin-bottom: var(--space-6);
+}
+
+.text-group dt {
+  font-weight: 700;
+  color: var(--primary-color-carbon-black);
+}
+
+.text-group dd {
+  margin: 0;
+  line-height: 1.5;
+}
+
+p {
+    font-family: var(--font-body);
+    color: var(--primary-color-carbon-black);
+    line-height: 1.5;
+    margin-bottom: var(--space-7);
+    max-width: 65ch;
+}
+
+.text-group p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.text-group {
+    margin-bottom: var(--space-4);
+}
+
+p,
+dd a {
+    color: inherit;
+}
+
+.star-point {
+    color: var(--primary-color-brick-ember);
+}
+
+.heading-arch {
+    position: absolute;
+    width: 25rem;
+    height: auto;
+    left: 0%;
+    padding-top: var(--space-2);
+    transform: translateX(-0%);
+}
+
+
+@media (max-width: 1023px) {
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+}
+
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 744px) {
+    
+}
