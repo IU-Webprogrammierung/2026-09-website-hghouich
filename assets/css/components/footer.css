@@ -1,9 +1,15 @@
 .footer {
     font-family: var(--font-body);
-    padding-bottom: var(--space-4);
-    padding-top: 0;
     margin-top: 0;
-    padding-left: 0;
+     padding-left: var(--space-8);
+    padding-right: var(--space-8);
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-8);
+  padding-bottom: var(--space-5);
+   padding-top: var(--space-14);
 }
 
 .copyright {
@@ -36,7 +42,7 @@
 .fa-circle-chevron-up {
   font-size: clamp(1rem, calc(0.5rem + 1.5vw), 1.5rem);
   color: var(--primary-color-burnt-peach);
-  padding-right: var(--space-4);
+  padding-right: var(--space-6);
 }
 
 .home {
