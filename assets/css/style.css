@@ -179,8 +179,8 @@ main {
 
 .logo {
     margin-top: var(--space-3);
-    width: clamp(5rem, 1vw, 7.8rem);
-    height: clamp(5rem, 1vw, 7.8rem);
+    width: clamp(7rem, 9vw, 9rem);
+    height: clamp(7rem, 9vw, 9rem);
 }
 
 
@@ -191,10 +191,6 @@ main {
 
 @media (max-width: 1920px) {
 
-.logo {
-    width: 7.5rem;
-    height: auto;
-}
     .wrapper {
         padding-block: 0;
         margin-top: var(--space-1);
@@ -222,6 +218,9 @@ main {
         margin-top: var(--space-3);
         margin-right: var(--space-1);
         margin-left: var(--space-3)
+    }
+    .footer {
+        padding-top: var(--space-3);
     }
 }
 
@@ -252,3 +251,22 @@ font-family: var(--font-body);
 .breadcrumb [aria-current="page"] {
   text-decoration: none;
 }
+
+h1 {
+    font-family: var(--font-heading-primary);
+    color: var(--primary-color-carbon-black);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-12);
+    font-size: var(--fs-h2);
+    line-height: var(--space-5);
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: var(--primary-color-carbon-black);
+    line-height: 1.5;
+    margin-bottom: var(--space-7);
+    max-width: 65ch;
+}
+

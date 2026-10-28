@@ -1,7 +1,7 @@
  .btn {
      padding: 0.75rem 1.5rem;
      border-radius: var(--radius-full);
-     font-weight: 200;
+     font-weight: 300;
      text-decoration: none;
      cursor: pointer;
      transition: opacity 0.3s ease;
