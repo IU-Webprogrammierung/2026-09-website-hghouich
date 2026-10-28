@@ -1,0 +1,123 @@
+/* base styels */
+.text-portrait {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.portrait {
+    width: clamp(17rem, 28vw, 25rem);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.heading-arch-a {
+      position: absolute;
+    width: 25rem;
+    height: auto;
+    left: 0%;
+    padding-top: var(--space-4);
+    transform: translateX(-0%);
+}
+
+.heading-2 {
+    color: var(--primary-color-carbon-black);
+    font-family: var(--font-heading-primary);
+    font-size: var(--fs-h2);
+    max-width: 7ch;
+    line-height: var(--space-5);
+    padding-top: var(--space-12);
+}
+
+
+.stars {
+    position: absolute;
+    width: clamp(12.5rem, 22vw, 14rem);
+    margin-left: -0.5rem;
+    padding-top: var(--space-9);
+
+
+}
+
+.skills-list {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: var(--primary-color-carbon-black);
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li::before {
+  content: "✦";
+  color:var( --primary-color-brick-ember);
+  margin-right: 0.5em;
+}
+
+.softwares-list {
+ font-family: var(--font-body);
+    font-size: var(--fs-body);
+    color: var(--primary-color-carbon-black);
+  list-style: none;
+  padding: 0;
+}
+
+.softwares-list li::before {
+  content: "✦";
+  color:var(--primary-color-burnt-peach);
+  margin-right: 0.5em;
+}
+
+.list-container {
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+gap: var(--space-4);
+}
+
+.page-about .btn-primary {
+    background: var(--primary-color-burnt-peach);
+}
+
+.page-about .btn-outline{
+background: transparent;
+      border: 1.5px solid var(--primary-color-burnt-peach);
+}
+
+@media (max-width: 1023px) {
+
+}
+
+
+@media (min-width: 1024px) {
+
+}
+
+
+@media (max-width: 1920px) {
+.page-about .hero-buttons {
+    padding-top: var(--space-4);
+}
+}
+
+@media (max-width: 744px) {
+    .text-portrait {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-4);
+    }
+
+    .portrait {
+        margin-bottom: 14%;
+    }
+
+    .list-container {
+    grid-template-columns: 1fr;
+  }
+.page-about .hero-buttons {
+    padding-top: var(--space-1);
+}
+ 
+}
