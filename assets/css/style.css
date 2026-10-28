@@ -9,6 +9,10 @@
 @import url('pages/index.css');
 @import url('pages/about.css');
 @import url('pages/impressum.css');
+@import url('pages/404.css');
+@import url('pages/datenschutz.css');
+@import url('pages/projects.css');
+
 
 
 
@@ -22,7 +26,7 @@
 }
 
 * {
-  -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /*fonts*/
@@ -35,15 +39,15 @@
 
 /* Typography */
 :root {
-  --fs-caption: clamp(0.75rem, calc(0.71rem + 0.17vw), 0.875rem);
---fs-small: clamp(0.5rem, calc(0.84rem + 0.17vw), 1rem);
---fs-body-small: clamp(0.9rem, calc(0.89rem + 0.17vw), 1.075rem);
---fs-body: clamp(1rem, calc(0.96rem + 0.17vw), 1.125rem);
---fs-body-lg: clamp(1.125rem, calc(1.09rem + 0.17vw), 1.25rem);
---fs-subheading: clamp(1.25rem, calc(0.89rem + 1.8vw), 2.5rem);
---fs-h3: clamp(1.5rem, calc(1.34rem + 0.69vw), 2rem);
---fs-h2: clamp(2rem, calc(1.84rem + 0.69vw), 2.5rem);
---fs-hero: clamp(1.9rem, calc(1.20rem + 2.92vw), 3.6rem);
+    --fs-caption: clamp(0.75rem, calc(0.71rem + 0.17vw), 0.875rem);
+    --fs-small: clamp(0.5rem, calc(0.84rem + 0.17vw), 1rem);
+    --fs-body-small: clamp(0.9rem, calc(0.89rem + 0.17vw), 1.075rem);
+    --fs-body: clamp(1rem, calc(0.96rem + 0.17vw), 1.125rem);
+    --fs-body-lg: clamp(1.125rem, calc(1.09rem + 0.17vw), 1.25rem);
+    --fs-subheading: clamp(1.25rem, calc(0.89rem + 1.8vw), 2.5rem);
+    --fs-h3: clamp(1.5rem, calc(1.34rem + 0.69vw), 2rem);
+    --fs-h2: clamp(2rem, calc(1.84rem + 0.69vw), 2.5rem);
+    --fs-hero: clamp(1.9rem, calc(1.20rem + 2.92vw), 3.6rem);
 }
 
 /*colors*/
@@ -137,22 +141,24 @@
 /* backgrounds */
 
 .home {
-    background:  radial-gradient(ellipse at 15% 10%, #fdc0a4 0%, transparent 50%),
+    background: radial-gradient(ellipse at 15% 10%, #fdc0a4 0%, transparent 50%),
         radial-gradient(ellipse at 85% 5%, #FFE4DC 0%, transparent 50%),
         radial-gradient(ellipse at 10% 100%, #ff7a92 0%, transparent 50%),
         #F5C0B8;
     background-attachment: fixed;
-    min-height: 100vh;;
+    min-height: 100vh;
+    ;
 }
 
 
 body {
-    background:  radial-gradient(ellipse at 15% 10%, #fdc0a4 0%, transparent 50%),
+    background: radial-gradient(ellipse at 15% 10%, #fdc0a4 0%, transparent 50%),
         radial-gradient(ellipse at 85% 5%, #FFE4DC 0%, transparent 50%),
         radial-gradient(ellipse at 5% 100%, #fc8a98 0%, transparent 50%),
         #F5C0B8;
     background-attachment: scroll;
-    min-height: 100vh;;
+    min-height: 100vh;
+    ;
 }
 
 html {
@@ -163,9 +169,9 @@ html {
 /* global styles */
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
@@ -219,37 +225,38 @@ main {
         margin-right: var(--space-1);
         margin-left: var(--space-3)
     }
+
     .footer {
         padding-top: var(--space-3);
     }
 }
 
 .breadcrumb ol {
-font-family: var(--font-body);
-  display: flex;
-  align-items: center;
-  gap: var(--space-1);
-  list-style: none;
-  padding: 0;
-  padding-top: var(--space-7);
-  padding-bottom: 0;
-  margin: 0;
-  color: var(--primary-color-burnt-peach);
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    list-style: none;
+    padding: 0;
+    padding-top: var(--space-7);
+    padding-bottom: 0;
+    margin: 0;
+    color: var(--primary-color-burnt-peach);
 }
 
 .breadcrumb li:not(:last-child)::after {
-  content: '/';
-  margin-left: var(--space-2);
-  color: var(--primary-color-burnt-peach);
+    content: '/';
+    margin-left: var(--space-2);
+    color: var(--primary-color-burnt-peach);
 }
 
 .breadcrumb a {
     color: var(--primary-color-brick-ember);
-  text-decoration: underline !important;
+    text-decoration: underline !important;
 }
 
 .breadcrumb [aria-current="page"] {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
@@ -269,4 +276,3 @@ p {
     margin-bottom: var(--space-7);
     max-width: 65ch;
 }
-
