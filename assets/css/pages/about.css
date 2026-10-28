@@ -120,4 +120,12 @@ background: transparent;
     padding-top: var(--space-1);
 }
  
+ .global-navigation {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
 }
