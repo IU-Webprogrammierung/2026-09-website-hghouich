@@ -1,28 +1,20 @@
+/* basee style */
+.hero-subtitle {
+    color: var(--primary-color-carbon-black);
+}
+
+.home .footer {
+    padding-bottom: var(--space-3);
+    padding-top: var(--space-1);
+    padding-left: 0;
+}
+
+.home h2 {
+    color: var(--primary-color-carbon-black);
+}
+
 /* breakpoints */
-
-
 @media (max-width: 1023px) {
-
-
-    .logo {
-        margin-top: 20%;
-    }
-
-    .global-navigation {
-        margin-left: clamp(1rem, 1vw, 2rem);
-        height: clamp(3.5rem, 4vh, 4rem);
-        align-items: center;
-        justify-content: start;
-        flex: 1;
-    }
-
-    .hero-tag-line {
-        font-family: var(--font-body);
-        font-weight: 300;
-        font-size: var(--fs-small);
-        color: var(--primary-color-carbon-black);
-        padding-bottom: clamp(5.4rem, 2.5vw, 5.7rem)
-    }
 
     .hero-section h1,
     .hero-section h2 {
@@ -62,35 +54,16 @@
         display: none;
     }
 
+    .footer {
+       display: flex;
+  flex-direction: row-reverse;
+  padding-right: 0;
+    }
+
 }
 
 @media (min-width: 1024px) {
-    .wrapper {
-        padding-block: 0;
-        padding-block: 0;
-        margin-top: var(--space-3);
-        margin-right: var(--space-1);
-        margin-left: var(--space-7);
-    }
-
-    .global-navigation {
-        scroll-padding-right: 4rem;
-    }
-
-    /* effects */
-    .global-navigation a:hover {
-        color: var(--primary-color-burnt-peach);
-        transition: color 0.1s ease
-    }
-
-    .global-navigation a.active {
-        color: var(--primary-color-burnt-peach);
-        text-decoration: underline !important;
-        text-decoration-thickness: 0.5px;
-        text-underline-offset: 0.2rem;
-
-    }
-
+    
     .hero-tag-line {
         color: var(--primary-color-carbon-black);
         padding-bottom: clamp(9rem, 7vw, 9.2rem);
@@ -146,7 +119,6 @@
         opacity: 0;
     }
 
-
     .index-decor {
         position: absolute;
         top: 0;
@@ -181,20 +153,6 @@
 
 
 @media (max-width: 1920px) {
-
-
-    .wrapper {
-        padding-block: 0;
-        margin-top: var(--space-1);
-        margin-bottom: 0;
-        margin-right: var(--space-8);
-        margin-left: var(--space-10);
-    }
-
-    .global-navigation {
-        gap: clamp(5rem, 11.8vw, 18rem);
-
-    }
 
     .hero-title {
         font-size: var(--fs-hero);
@@ -255,7 +213,6 @@
 }
 
 @media (max-width: 744px) {
-
 
 
     .wrapper {

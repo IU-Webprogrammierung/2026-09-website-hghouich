@@ -1,13 +1,5 @@
 /* base style */
 
-h1 {
-    font-family: var(--font-heading-primary);
-    color: var(--primary-color-carbon-black);
-    margin-top: var(--space-8);
-    margin-bottom: var(--space-12);
-    font-size: var(--fs-h2);
-}
-
 h2 {
     font-family: var(--font-heading-secondary);
     color: var(--primary-color-burnt-peach);
@@ -43,13 +35,6 @@ h3 {
   line-height: 1.5;
 }
 
-p {
-    font-family: var(--font-body);
-    color: var(--primary-color-carbon-black);
-    line-height: 1.5;
-    margin-bottom: var(--space-7);
-    max-width: 65ch;
-}
 
 .text-group p {
     margin-bottom: 0;
