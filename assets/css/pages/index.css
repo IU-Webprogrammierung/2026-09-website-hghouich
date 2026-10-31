@@ -98,8 +98,8 @@
     .decor-arc-large {
         position: absolute;
         right: -50px;
-        top: 20%;
-        width: clamp(2rem, 5vw, 5rem);
+        top: 66.9%;
+        width: clamp(15rem, 30vw, 20rem);
         height: auto;
     }
 
@@ -211,8 +211,8 @@
 
     .footer {
         display: flex;
-        flex-direction: row-reverse;
-        padding-right: 0;
+      
+        padding-left: 0;
     }
 
     .oval-deco {
@@ -220,6 +220,18 @@
         width: clamp(11rem, 12vw, 24rem);
           top: clamp(20.9rem, 19vw, 21rem);
        left: clamp(12.6rem, 20.33vw, 20rem);
+    }
+
+    .decor-arc-small {
+          position: absolute;
+        top: 66.9%;
+        left: clamp(5rem, 50vw, 80rem);
+        width: clamp(19rem, 50vw, 20rem);
+        height: auto;
+    }
+
+    .decor-arc-large {
+         width: clamp(10rem, 19vw, 18rem);
     }
 }
 
