@@ -138,6 +138,10 @@
     --grid-columns: 12;
 }
 
+/* tile size */
+:root {
+  --tile-size: clamp(5rem, 25vw, 9rem);
+}
 /* backgrounds */
 
 .home {
@@ -223,7 +227,7 @@ main {
         padding-block: 0;
         margin-top: var(--space-3);
         margin-right: var(--space-1);
-        margin-left: var(--space-3)
+        margin-left: var(--space-3);
     }
 
     .footer {
