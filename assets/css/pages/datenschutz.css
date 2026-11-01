@@ -1,0 +1,53 @@
+.page-datenschutz h2 {
+    font-family: var(--font-heading-secondary);
+    color: var(--primary-color-brick-ember);
+    margin-bottom: var(--space-6);
+    padding-top: var(--space-8);
+}
+
+.page-datenschutz h3 {
+    font-family: var(--font-heading-secondary);
+    font-weight: 600;
+    color: var(--primary-color-burnt-peach);
+    margin-bottom: var(--space-4);
+    margin-top: var(--space-8);
+}
+
+.heading-arch-2 {
+    position: absolute;
+    width: 33rem;
+    height: auto;
+    left: 0%;
+    padding-top: var(--space-2);
+    transform: translateX(-0%);
+}
+
+
+
+.page-datenschutz li {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    list-style: none;
+    padding: 0;
+}
+
+.page-datenschutz a {
+    color: var(--primary-color-brick-ember);
+    text-decoration: none;
+}
+
+
+.index-link a {
+    color: var(--primary-color-carbon-blac);
+}
+
+
+@media (max-width: 1023px) {}
+
+
+@media (min-width: 1024px) {}
+
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 744px) {}
