@@ -8,26 +8,52 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="assets/js/loader.js"></script>
+  <script src="assets/js/script.js"></script>
 </head>
 
 <body class="page-projects">
   <header class="site-header"></header>
   <main class="wrapper">
     <ul class="projects-grid">
-      <li class="discipline"><a href="uxui-preview.html">UX/UI <br> Design</a></li>
-      <li class="tile-deco" > <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true"></li>
+      <li class="discipline" onclick="openModal('modal-uxui')"><a href="#" onclick="event.preventDefault() ; openModal('modal-uxui')">UX/UI <br> Design</a></li>
+      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
+      </li>
       <li class="discipline">Cross <br> Media</li>
-     <li class="tile-deco" > <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true"></li>
+      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
+      </li>
       <li class="discipline"> Grafik <br> Design</li>
-      <li class="tile-deco" > <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true"></li>
+      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
+      </li>
       <li class="discipline"><a href="3d-preview.html">3D <br> Scenes</a></li>
-      <li class="tile-deco" > <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true"></li>
+      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
+      </li>
       <li class="discipline"><a href="fotografie-preview.html">Fotografie</a></li>
-      <li class="tile-deco-ipad" > <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true"></li>
+      <li class="tile-deco-ipad"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile"
+          aria-hidden="true"></li>
     </ul>
   </main>
 
   <footer class="wrapper"></footer>
+
+  
+  <div class="modal-overlay" id="modal-uxui" hidden>
+    <div class="modal wrapper">
+      <div class="modal-header">
+        <h1 class="preview-heading">UX/UI <br> Design</h1>
+      </div>
+
+      <div class="modal-body">
+        <p class="preview-text">Vom Scribble bis zum Prototyp. Ich gestalte barrierefreie Erlebnisse, die überzeugen und
+          funktionieren.</p>
+        <img class="preview-picture" src="assets/images/uxui/Desktop/Rectangle 85.png" alt="User Experience Mockups">
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal('modal-uxui')">Zurück</button>
+        <a href="uxui.html" class="btn btn-primary">Projekte ansehen</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 

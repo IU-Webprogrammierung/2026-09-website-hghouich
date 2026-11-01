@@ -1,3 +1,5 @@
+
+// hero-motion 
 document.addEventListener('DOMContentLoaded', () => {
   const words = ['UX/UI Design', 'Cross Media', 'Grafik Design','3D Modeling', 'Fotografie'];
   let index = 0;
@@ -14,3 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1500);
   }
 });
+
+
+// projects modals
+function openModal(id) {
+  document.getElementById(id).removeAttribute('hidden');
+}
+function closeModal(id) {
+  document.getElementById(id).setAttribute('hidden', '')
+}
+
