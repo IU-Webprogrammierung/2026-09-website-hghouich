@@ -12,8 +12,11 @@
 @import url('pages/404.css');
 @import url('pages/datenschutz.css');
 @import url('pages/projects.css');
-
-
+@import url('components/modal.css');
+@import url('components/previews.css');
+@import url('pages/contact.css');
+@import url('pages/loagh-app.css');
+@import url('pages/fotografie.css');
 
 
 /*CSS Custom Properties*/
@@ -165,6 +168,27 @@ body {
     ;
 }
 
+.page-contact {
+    background: radial-gradient(ellipse at 15% 10%, #f6c8bd 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 5%, #FFE4DC 0%, transparent 50%),
+        radial-gradient(ellipse at 5% 100%, #fe8d9b 0%, transparent 50%),
+        #F5C0B8;
+    background-attachment: scroll;
+    min-height: 100vh;
+    ;
+}
+
+.page-about {
+    background: radial-gradient(ellipse at 15% 10%, #f6c8bd 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 5%, #FFE4DC 0%, transparent 50%),
+        radial-gradient(ellipse at 5% 100%, #fc8a98 0%, transparent 50%),
+        #F5C0B8;
+    background-attachment: scroll;
+    min-height: 100vh;
+    ;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -185,6 +209,8 @@ main {
 .site-header {
     width: 100%;
 }
+
+
 
 
 .logo {
@@ -279,4 +305,5 @@ p {
     line-height: 1.5;
     margin-bottom: var(--space-7);
     max-width: 65ch;
+    font-weight: 300;
 }
