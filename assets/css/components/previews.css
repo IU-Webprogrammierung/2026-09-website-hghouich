@@ -1,0 +1,42 @@
+.preview-heading {
+    font-family: var(--font-heading-secondary);
+ font-size: var(--fs-h3);
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+.projects-cards {
+    padding-left: 2rem;
+    list-style: none;
+    padding-top: var(--space-8);
+}
+
+.projectspreview {
+    position: relative;
+    z-index: 1;
+    width: clamp(18rem, 27vw, 30rem);
+    height: auto;
+     padding-bottom: var(--space-12);
+}
+
+.projects-cards li a {
+  position: relative;
+  display: block;
+}
+
+.projects-cards li a::before {
+
+ content: '';
+  position: absolute;
+ inset: -1.5rem;
+  border: 2px solid var(--primary-color-burnt-peach);
+  border-radius: var(--radius-l);
+   transform: translate(4px, 4px);
+    z-index: 0;
+        width: clamp(16rem, 29.5vw, 28rem);
+        height: clamp(18rem, 10vw, 19rem);
+          background: rgba(242, 237, 220, 0.45);
+    backdrop-filter: blur(12px);
+    --webkit-backdrop-filter: blur(12px);
+  }
+  
