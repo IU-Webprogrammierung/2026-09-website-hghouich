@@ -80,5 +80,9 @@ dd a {
 }
 
 @media (max-width: 744px) {
-    
+    .heading-arch {
+    position: absolute;
+    width: 20rem;
+    height: auto;
+    }
 }

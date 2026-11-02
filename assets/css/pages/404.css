@@ -71,10 +71,6 @@
     left: 0;
 }
 
-.page-error .copyright,
-.copyright-content {
-    display: none;
-}
 
 .page-error {
     overflow: hidden;
