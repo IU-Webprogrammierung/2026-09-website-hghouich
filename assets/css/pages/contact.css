@@ -86,7 +86,8 @@ padding-bottom: var(--space-6);
     left: 35%;
 }
 
-.page-contact a {
+
+.page-contact .personal-contact a {
     display: flex;
     text-decoration: none;
     font-family: var(--font-body);
@@ -94,7 +95,8 @@ padding-bottom: var(--space-6);
     color: var(--primary-color-carbon-black);
 }
 
-.page-contact i {
+
+.page-contact .personal-contact i {
     font-size: var(--fs-body-lg);
     color: var(--primary-color-brick-ember);
     padding-right: var(--space-2);
