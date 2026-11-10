@@ -8,12 +8,6 @@ loadComponent(`header`, `components/header.html`).then(() => {
     if (link.href === window.location.href) {
       link.classList.add('active');
 
-      loadComponent('header', 'components/header.html').then(() => {
-  // Active Nav Link
-  const navLinks = document.querySelectorAll('.global-navigation a');
-  navLinks.forEach(link => {
-    if (link.href === window.location.href) {
-      link.classList.add('active');
     }
   });
 
@@ -24,28 +18,22 @@ loadComponent(`header`, `components/header.html`).then(() => {
 
   hamburger?.addEventListener('click', () => mobileMenu.classList.add('open'));
   closeBtn?.addEventListener('click', () => mobileMenu.classList.remove('open'));
-  
+
   mobileMenu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => mobileMenu.classList.remove('open'));
   });
 });
-    }
-  });
-});
+
+
 loadComponent(`footer`, `components/footer.html`);
 
 
 async function loadComponent(selector, path) {
   try {
-    // HTML-Datei vom Server laden
     const response = await fetch(path);
     if (!response.ok) throw new Error('nicht gefunden');
-    // Antwort in lesbaren Text umwandeln
     const html = await response.text();
-    // Zielelement auf der Seite finden
-    const element = document.querySelector(selector);
-    // Geladenen HTML-Code in das Element einfügen
-    element.innerHTML = html;
+    document.querySelector(selector).innerHTML = html;
   } catch (error) {
     console.error(`Fehler beim Laden: ${path}`, error);
   }
