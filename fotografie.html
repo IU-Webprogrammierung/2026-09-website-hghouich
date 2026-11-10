@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="assets/js/loader.js"></script>
+    <script src="assets/js/fotografie.js" defer></script>
 </head>
 
-<body>
+<body class="fotografie">
 
     <header class="site-header"></header>
 
-    <main>
+    <main class="wrapper">
         <nav aria-label="breadcrumb">
             <ol>
                 <li><a href="projects.html">Projekte</a></li>
@@ -25,12 +26,11 @@
 
         <div role="tablist">
             <button id="tab-wildlife" role="tab" aria-selected="true" aria-controls="wildlife">Wild Life</button>
-            <button id="tab-architecture" role="tab" aria-selected="false"
-                aria-controls="architecture">Architecture</button>
+            <button id="tab-architecture" role="tab" aria-selected="false" aria-controls="architecture">Architecture</button>
             <button id="tab-nature" role="tab" aria-selected="false" aria-controls="nature">Nature</button>
         </div>
 
-        <!-- Hinweis: In Phase 1 sind alle Tab-Inhalte sichtbar. Die Tab-Umschaltung wird in Phase 3 mit JavaScript implementiert. -->
+       
 
         <section role="tabpanel" id="wildlife" aria-labelledby="tab-wildlife">
 
@@ -71,9 +71,9 @@
 
         </section>
 
-        <br>
 
-        <section role="tabpanel" id="Architecture" aria-labelledby="tab-architecture">
+
+        <section role="tabpanel" id="architecture" aria-labelledby="tab-architecture" hidden>
 
             <div class="hero-photo">
                 <img src="assets/images/Fotografie/Architecture/12.jpg"
@@ -122,7 +122,7 @@
 
         </section>
 
-        <section role="tabpanel" id="nature" aria-labelledby="tab-nature">
+        <section role="tabpanel" id="nature" aria-labelledby="tab-nature" hidden>
 
             <div class="hero-photo">
                 <img src="assets/images/Fotografie/Nature/23.jpg"
