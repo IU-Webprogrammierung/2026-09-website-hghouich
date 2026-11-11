@@ -1,88 +1,177 @@
-.page-fotografie h1 {
-    color: var(--primary-color-burnt-peach);
-}
+@media (max-width: 1920px) {
 
-.page-fotografie img {
-    border-radius: var(--radius-l);
-   
-}
-
-.page-fotografie .hero-photo {
-position: relative;
-    margin-left: calc(47% - 50vw);
-    justify-content: center;
-    width: fit-content;
-    margin-inline: auto;
-    padding: 2rem;
-    background: rgba(242, 237, 220, 0.45);
-    border: 2px solid var(--primary-color-burnt-peach);
-    border-radius: var(--radius-l);
-}
-
-.page-fotografie img {
-    border-radius: var(--radius-l);
-}
-
-.page-fotografie [role="tablist"] {
-     display: flex;
-    margin-left: calc(47% - 50vw);
-    justify-content: center;
-    padding-bottom: var(--space-18);
-    font-family: var(--font-body);
-   font-size: var(--fs-body);
-   font-weight: 500;
-   color: var(--primary-color-eggshell);
-}
-
-.page-fotografie .tab-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14rem;
-
-}
-
-.page-fotografie button {
-   font: inherit;
-   width: inherit;
-   height: inherit;
-   color: inherit;
-    border: 1px solid var(--primary-color-burnt-peach);
-    padding: 5px;
-    width: 12rem;
-    height: 4.5rem;
-    background-color: transparent;
-    border-radius: var(--radius-full);
-     align-items: center;
-    justify-content: center;
-    
-}
-
-.page-fotografie button span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--radius-full);
-       cursor: pointer;
-}
+    .page-fotografie h1 {
+        color: var(--primary-color-burnt-peach);
+    }
 
 
+    /* tab nav */
+    .page-fotografie [role="tablist"] {
+        display: flex;
+        margin-left: calc(47% - 50vw);
+        justify-content: center;
+        padding-top: var(--space-4);
+        padding-bottom: var(--space-4);
+        font-family: var(--font-body);
+        font-size: var(--fs-body);
+        font-weight: 500;
+        color: var(--primary-color-eggshell);
+    }
 
-.page-fotografie [role="tab"] span {
-  background: var(--primary-color-eggshell);
-  color: var(--secondary-color-soft-linen);
-  transition: background 0.2s ease, color 0.2s ease;
-}
+    .page-fotografie .tab-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11rem;
+    }
+
+    .page-fotografie [role="tab"] {
+        font: inherit;
+        width: inherit;
+        height: inherit;
+        color: inherit;
+        border: 1px solid var(--primary-color-burnt-peach);
+        padding: 5px;
+        width: 12rem;
+        height: 4rem;
+        background-color: transparent;
+        border-radius: var(--radius-full);
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .page-fotografie [role="tab"] span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: var(--radius-full);
+        cursor: pointer;
+        background: var(--primary-color-eggshell);
+        color: var(--secondary-color-soft-linen);
+        transition: background 0.2s ease, color 0.2s ease;
+    }
 
 
-.page-fotografie [role="tab"][aria-selected="true"] span {
-  background: var(--primary-color-burnt-peach);
-  color: var(--primary-color-eggshell);
-}
+    .page-fotografie [role="tab"][aria-selected="true"] span {
+        background: var(--primary-color-burnt-peach);
+        color: var(--primary-color-eggshell);
+    }
 
-.page-fotografie [role="tab"]:not([aria-selected="true"]):hover span {
-  background: var(--primary-color-burnt-peach);
-  color: var(--primary-color-eggshell);
-  opacity: 0.80;
+    .page-fotografie [role="tab"]:not([aria-selected="true"]):hover span {
+        background: var(--primary-color-burnt-peach);
+        color: var(--primary-color-eggshell);
+        opacity: 0.80;
+    }
+
+    .page-fotografie img {
+        border-radius: var(--radius-l);
+
+    }
+
+    /* fotos */
+    .page-fotografie .hero-photo {
+        margin-top: var(--space-18);
+        margin-bottom: var(--space-18);
+        position: relative;
+        display: flex;
+        margin-left: calc(67% - 50vw);
+        width: fit-content;
+
+    }
+
+    .page-fotografie img {
+        border-radius: var(--radius-l);
+    }
+
+    .page-fotografie [role="tabpanel"] img {
+
+        width: fit-content;
+        padding: 1.2rem;
+        background: rgba(242, 237, 220, 0.45);
+        backdrop-filter: blur(12px);
+        --webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--primary-color-burnt-peach);
+        border-radius: calc(var(--radius-m) + 0.5rem + 2px);
+    }
+
+    .page-fotografie .photo-image-text {
+        margin-top: var(--space-32);
+        margin-bottom: var(--space-18);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9rem;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .page-fotografie [role="tabpanel"] p {
+        margin-top: var(--space-32);
+        margin-bottom: var(--space-18);
+        max-width: 36ch;
+        gap: var(--space-8);
+
+    }
+
+    .page-fotografie .photo-couple1 {
+        margin-top: var(--space-32);
+        margin-bottom: var(--space-18);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9rem;
+        margin-left: calc(47% - 50vw);
+    }
+
+    .page-fotografie .closing-photo {
+        margin-top: var(--space-32);
+        margin-bottom: var(--space-12);
+        display: flex;
+        margin-left: calc(66% - 50vw);
+        width: fit-content;
+    }
+
+    .page-fotografie .photo-thumbnails {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        width: fit-content;
+max-width: 1000px; 
+ margin-inline: auto;
+    }
+
+    .page-fotografie .lightbox-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.2rem;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-fotografie .lightbox-grid img {
+        width: 72%;
+        height: auto;
+        justify-content: center;
+        padding: 0.8rem;
+        align-items: center;
+        gap: 0;
+    }
+
+    .hero-thumbnail {
+        margin-top: var(--space-32);
+        margin-bottom: var(--space-2);
+    }
+
+
+
 }
