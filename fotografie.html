@@ -11,12 +11,12 @@
     <script src="assets/js/fotografie.js" defer></script>
 </head>
 
-<body class="fotografie">
+<body class="page-fotografie">
 
     <header class="site-header"></header>
 
     <main class="wrapper">
-        <nav aria-label="breadcrumb">
+        <nav class="breadcrumb">
             <ol>
                 <li><a href="projects.html">Projekte</a></li>
                 <li aria-current="page">Fotografie</li>
@@ -24,11 +24,10 @@
         </nav>
         <h1 class="projekt-Name">Fotografie</h1>
 
-        <div role="tablist">
-            <button id="tab-wildlife" role="tab" aria-selected="true" aria-controls="wildlife">Wild Life</button>
-            <button id="tab-architecture" role="tab" aria-selected="false"
-                aria-controls="architecture">Architecture</button>
-            <button id="tab-nature" role="tab" aria-selected="false" aria-controls="nature">Nature</button>
+        <div class="tab-list" role="tablist">
+            <button id="tab-wildlife" role="tab" aria-selected="true" aria-controls="wildlife"><span>Wild Life</span> </button>
+            <button id="tab-architecture" role="tab" aria-selected="false" aria-controls="architecture"><span>Architecture</span></button>
+            <button id="tab-nature" role="tab" aria-selected="false" aria-controls="nature"><span>Nature</span></button>
         </div>
 
 
@@ -52,7 +51,7 @@
             </div>
 
             <div class="photo-thumbnails">
-                <img src="assets/images/Fotografie/wildlife/05.jpg" alt="Tiger" width="959" height="552">
+                <img class="hero-thumbnail" src="assets/images/Fotografie/wildlife/05.jpg" alt="Tiger" width="959" height="552">
                 <div class="lightbox-grid">
                     <img src="assets/images/Fotografie/wildlife/06.jpg" alt="Muuflon" width="204" height="180">
                     <img src="assets/images/Fotografie/wildlife/07.jpg" alt="Schneeleopard" width="204" height="180">
@@ -99,7 +98,7 @@
             </div>
 
             <div class="photo-thumbnails">
-                <img src="assets/images/Fotografie/Architecture/16.jpg"
+                <img class="hero-thumbnail" src="assets/images/Fotografie/Architecture/16.jpg"
                     alt="Frankfurter Baustelle mit Kränen und modernen Hochhäusern im Bau" width="959" height="552">
                 <div class="lightbox-grid">
                     <img src="assets/images/Fotografie/Architecture/17.jpg" alt="Gebäudedetail bei Nacht" width="204"
@@ -151,7 +150,7 @@
             </div>
 
             <div class="photo-thumbnails">
-                <img src="assets/images/Fotografie/Nature/27.jpg"
+                <img class="hero-thumbnail" src="assets/images/Fotografie/Nature/27.jpg"
                     alt="Parklandschaft mit alten Bäumen und blauem Himmel" width="959" height="552">
                 <div class="lightbox-grid">
                     <img src="assets/images/Fotografie/Nature/28.jpg" alt="Brücke über einen ruhigen Fluss" width="204"
