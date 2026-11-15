@@ -15,18 +15,22 @@
 
     <header class="site-header"></header>
 
-    <main class="wrapper">
-        <nav class="breadcrumb">
-            <ol>
-                <li><a href="projects.html">Projekte</a></li>
-                <li aria-current="page">Fotografie</li>
-            </ol>
-        </nav>
-        <h1 class="projekt-Name">Fotografie</h1>
+    <main>
+        <div class="wrapper">
+            <nav class="breadcrumb">
+                <ol>
+                    <li><a href="projects.html">Projekte</a></li>
+                    <li aria-current="page">Fotografie</li>
+                </ol>
+            </nav>
+            <h1 class="projekt-Name">Fotografie</h1>
+        </div>
 
         <div class="tab-list" role="tablist">
-            <button id="tab-wildlife" role="tab" aria-selected="true" aria-controls="wildlife"><span>Wild Life</span> </button>
-            <button id="tab-architecture" role="tab" aria-selected="false" aria-controls="architecture"><span>Architecture</span></button>
+            <button id="tab-wildlife" role="tab" aria-selected="true" aria-controls="wildlife"><span>Wild Life</span>
+            </button>
+            <button id="tab-architecture" role="tab" aria-selected="false"
+                aria-controls="architecture"><span>Architecture</span></button>
             <button id="tab-nature" role="tab" aria-selected="false" aria-controls="nature"><span>Nature</span></button>
         </div>
 
@@ -35,28 +39,29 @@
         <section role="tabpanel" id="wildlife" aria-labelledby="tab-wildlife">
 
             <div class="hero-photo">
-                <img src="assets/images/Fotografie/wildlife/01.jpg" alt="Elefant" width="959" height="647">
+                <img src="assets/images/Fotografie/wildlife/01.webp" alt="Elefant" width="959" height="647">
             </div>
 
             <div class="photo-image-text">
-                <img src="assets/images/Fotografie/wildlife/02.jpg" alt="Tukane" width="389" height="426">
+                <img src="assets/images/Fotografie/wildlife/02.webp" alt="Tukane" width="389" height="426">
                 <p>Jedes Tier hat eine Persönlichkeit. Der Tukan mit seinen leuchtenden Farben, der Elefant mit seiner
                     ruhigen Präsenz. Ich versuche genau diesen Moment einzufangen, in dem ein Tier einfach es selbst
                     ist.</p>
             </div>
 
             <div class="photo-couple1">
-                <img src="assets/images/Fotografie/wildlife/03.jpg" alt="Krauskopfpelikane" width="477" height="512">
-                <img src="assets/images/Fotografie/wildlife/04.jpg" alt="Giraffe" width="312" height="512">
+                <img src="assets/images/Fotografie/wildlife/03.webp" alt="Krauskopfpelikane" width="477" height="512">
+                <img src="assets/images/Fotografie/wildlife/04-2.jpg" alt="Giraffe" width="312" height="512">
             </div>
 
             <div class="photo-thumbnails">
-                <img class="hero-thumbnail" src="assets/images/Fotografie/wildlife/05.jpg" alt="Tiger" width="959" height="552">
+                <img class="hero-thumbnail" src="assets/images/Fotografie/wildlife/05.webp" alt="Tiger" width="959" height="552" data-full="assets/images/Fotografie/wildlife/large/05.webp" >
+                    
                 <div class="lightbox-grid">
-                    <img src="assets/images/Fotografie/wildlife/06.jpg" alt="Muuflon" width="204" height="180">
-                    <img src="assets/images/Fotografie/wildlife/07.jpg" alt="Schneeleopard" width="204" height="180">
-                    <img src="assets/images/Fotografie/wildlife/08.jpg" alt="Schildkröte" width="204" height="180">
-                    <img src="assets/images/Fotografie/wildlife/09.jpg" alt="Affe" width="204" height="180">
+                    <img src="assets/images/Fotografie/wildlife/06.webp" alt="Muuflon" width="204" height="180"  data-full="assets/images/Fotografie/wildlife/06.webp">
+                    <img src="assets/images/Fotografie/wildlife/large/07.webp" alt="Schneeleopard" width="204" height="180"  data-full="assets/images/Fotografie/wildlife/large/07.webp">
+                    <img src="assets/images/Fotografie/wildlife/large/08.webp" alt="Schildkröte"  data-full="assets/images/Fotografie/wildlife//large/08.webp">
+                    <img src="assets/images/Fotografie/wildlife/large/09.webp" alt="Affe" width="204" height="180"  data-full="assets/images/Fotografie/wildlife/large/09.webp">
                 </div>
             </div>
 
@@ -67,7 +72,7 @@
             </div>
 
             <div class="closing-photo">
-                <img src="assets/images/Fotografie/wildlife/11.jpg" alt="Fischreiher-Silhouette" width="959"
+                <img src="assets/images/Fotografie/wildlife/11.webp" alt="Fischreiher-Silhouette" width="959"
                     height="647">
             </div>
 
@@ -183,6 +188,20 @@
     </main>
 
     <footer class="wrapper"></footer>
+
+    <dialog id="lightbox" aria-label="Bildansicht" tabindex="-1">
+        <button type="button" class="lightbox-prev" aria-label="Vorheriges Bild">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15 4l-8 8 8 8" />
+            </svg>
+        </button>
+        <img class="lightbox-img" src=" " alt=" ">
+        <button type="button" class="lightbox-next" aria-label="Nächstes Bild">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M9 4l8 8-8 8" />
+            </svg>
+        </button>
+    </dialog>
 
 </body>
 
