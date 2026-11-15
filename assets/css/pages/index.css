@@ -315,7 +315,7 @@
 
 
     .footer {
-        padding-right: var(--space-3);
+        padding-right: var(--space-1);
         right: 0;
         font-size: var(--fs-caption);
     }
