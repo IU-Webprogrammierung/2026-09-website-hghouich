@@ -59,7 +59,7 @@
     --primary-color-burnt-peach: #ef6439;
     --primary-color-eggshell: #F2EDDC;
     --primary-color-carbon-black: #191919;
-    --secondary-color-soft-linen: #E2E0D7;
+    --secondary-color-soft-linen: #b6b5af;
     --secondary-color-old-lace: (#FFF4E6; transparent 50%; ) --secondary-color-graphite: #3A3938;
     --secondary-color-bright-snow: #F9F9F9;
 }
@@ -187,6 +187,17 @@ body {
     min-height: 100vh;
     ;
 }
+
+.page-fotografie {
+    background: radial-gradient(ellipse at 15% 10%, #ffdbc8 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 5%, #fbdac2 0%, transparent 50%),
+        radial-gradient(ellipse at 5% 100%, #f8c4b9 0%, transparent 50%),
+        #ffd1b9;
+    background-attachment: scroll;
+    min-height: 100vh;
+    ;
+}
+
 
 
 html {
