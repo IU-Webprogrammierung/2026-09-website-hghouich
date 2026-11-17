@@ -12,88 +12,101 @@
 </head>
 
 <body class="page-projects">
+
   <header class="site-header"></header>
+
   <main class="wrapper">
-    <ul class="projects-grid">
-      <li class="discipline"><button type="button" onclick="openModal('modal-uxui')">UX/UI <br>
-          Design</button></li>
-      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
-      </li>
-      <li class="discipline">Cross <br> Media</li>
-      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
-      </li>
-      <li class="discipline"> Grafik <br> Design</li>
-      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
-      </li>
-      <li class="discipline"><button type="button" onclick="openModal('modal-3d')">3D <br>
-          Scenes</button></li>
-      <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile" aria-hidden="true">
-      </li>
-      <li class="discipline"><button type="button" onclick="openModal('modal-fotografie')">Fotografie</button></li>
-      <li class="tile-deco-ipad"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile"
-          aria-hidden="true"></li>
-    </ul>
+    <div class="projects-stage">
+      <ul class="projects-grid">
+        <li class="discipline"><button type="button" onclick="openModal('modal-uxui')">UX/UI <br>
+            Design</button></li>
+        <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile"
+            aria-hidden="true">
+        </li>
+        <li class="discipline">Cross <br> Media</li>
+        <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile"
+            aria-hidden="true">
+        </li>
+        <li class="discipline"> Grafik <br> Design</li>
+        <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile"
+            aria-hidden="true">
+        </li>
+        <li class="discipline"><button type="button" onclick="openModal('modal-3d')">3D <br>
+            Scenes</button></li>
+        <li class="tile-deco"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile"
+            aria-hidden="true">
+        </li>
+        <li class="discipline"><button type="button" onclick="openModal('modal-fotografie')">Fotografie</button></li>
+        <li class="tile-deco-ipad"> <img src="assets/decor-elements/Desktop/Star 16.svg" class="star-tile"
+            aria-hidden="true"></li>
+      </ul>
+
+
+
+
+
+      <div class="modal-overlay" id="modal-uxui" hidden>
+        <div class="modal wrapper">
+          <div class="modal-header">
+            <h1 class="preview-heading">UX/UI <br> Design</h1>
+          </div>
+
+          <div class="modal-body">
+            <p class="preview-text">Vom Scribble bis zum Prototyp. Ich gestalte barrierefreie Erlebnisse, die überzeugen
+              und
+              funktionieren.</p>
+            <img class="preview-picture" src="assets/images/uxui/Desktop/Rectangle 85.png"
+              alt="User Experience Mockups">
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-outline" onclick="closeModal('modal-uxui')">Zurück</button>
+            <a href="uxui.html" class="btn btn-primary">Projekte ansehen</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-overlay" id="modal-fotografie" hidden>
+        <div class="modal wrapper">
+          <div class="modal-header">
+            <h1 class="preview-heading">Fotografie</h1>
+          </div>
+          <div class="modal-body">
+            <p class="preview-text">Atmosphäre, Licht und echte Emotionen. <br> Von Architektur bis Dokumentation. Ich
+              fotografiere Momente, die mehr sagen als Worte.</p>
+            <img class="preview-picture" src="assets/images/Fotografie/Desktop/Rectangle 85.jpg"
+              alt="Historisches Gebäude mit roter Fassade und modernem Gerüst unter blauem Himmel">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline" onclick="closeModal('modal-fotografie')">Zurück</button>
+            <a href="fotografie.html" class="btn btn-primary">Projekte ansehen</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-overlay" id="modal-3d" hidden>
+        <div class="modal wrapper">
+          <div class="modal-header">
+            <h1 class="preview-heading">3D <br> Scenes</h1>
+          </div>
+          <div class="modal-body">
+            <p class="preview-text">Licht, Materialien, Formen. <br> Ich erschaffe Renderings, die nicht nur aussehen,
+              sondern
+              wirken.</p>
+            <img class="preview-picture" src="assets/images/3D-Szene/Desktop/Rectangle 85.jpg"
+              alt="D-Render einer Wohnzimmerszene mit Pendellampen, Aquarium, Discokugel und roter Vase auf einem Holztisch">
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-outline" onclick="closeModal('modal-3d')">Zurück</button>
+            <a href="3d-scenes.html" class="btn btn-primary">Projekte ansehen</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="wrapper"></footer>
-
-
-  <div class="modal-overlay" id="modal-uxui" hidden>
-    <div class="modal wrapper">
-      <div class="modal-header">
-        <h1 class="preview-heading">UX/UI <br> Design</h1>
-      </div>
-
-      <div class="modal-body">
-        <p class="preview-text">Vom Scribble bis zum Prototyp. Ich gestalte barrierefreie Erlebnisse, die überzeugen und
-          funktionieren.</p>
-        <img class="preview-picture" src="assets/images/uxui/Desktop/Rectangle 85.png" alt="User Experience Mockups">
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-outline" onclick="closeModal('modal-uxui')">Zurück</button>
-        <a href="uxui.html" class="btn btn-primary">Projekte ansehen</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="modal-fotografie" hidden>
-    <div class="modal wrapper">
-      <div class="modal-header">
-        <h1 class="preview-heading">Fotografie</h1>
-      </div>
-      <div class="modal-body">
-        <p class="preview-text">Atmosphäre, Licht und echte Emotionen. <br> Von Architektur bis Dokumentation. Ich
-          fotografiere Momente, die mehr sagen als Worte.</p>
-        <img class="preview-picture" src="assets/images/Fotografie/Desktop/Rectangle 85.jpg"
-          alt="Historisches Gebäude mit roter Fassade und modernem Gerüst unter blauem Himmel">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-outline" onclick="closeModal('modal-fotografie')">Zurück</button>
-        <a href="fotografie.html" class="btn btn-primary">Projekte ansehen</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="modal-3d" hidden>
-    <div class="modal wrapper">
-      <div class="modal-header">
-        <h1 class="preview-heading">3D <br> Scenes</h1>
-      </div>
-      <div class="modal-body">
-        <p class="preview-text">Licht, Materialien, Formen. <br> Ich erschaffe Renderings, die nicht nur aussehen,
-          sondern
-          wirken.</p>
-        <img class="preview-picture" src="assets/images/3D-Szene/Desktop/Rectangle 85.jpg"
-          alt="D-Render einer Wohnzimmerszene mit Pendellampen, Aquarium, Discokugel und roter Vase auf einem Holztisch">
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-outline" onclick="closeModal('modal-3d')">Zurück</button>
-        <a href="3d-scenes.html" class="btn btn-primary">Projekte ansehen</a>
-      </div>
-    </div>
-  </div>
 
 </body>
 
