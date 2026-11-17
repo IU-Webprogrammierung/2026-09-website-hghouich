@@ -1,82 +1,89 @@
 /* base styling*/
+@media (min-width: 1024px) and (max-width: 1920px) {
+ .projects-stage {
+  position: relative;    
+}
 
 .modal-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    z-index: 1000;
-    top: 11%;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
 }
 
-.modal {
-      display: flex;
-  flex-direction: column;
-    background: rgba(242, 237, 220, 0.75);
-    backdrop-filter: blur(12px);
-    --webkit-backdrop-filter: blur(12px);
-    border: 3px solid var(--primary-color-burnt-peach);
-    border-radius: var(--radius-l);
-   width: clamp(39rem, 25vw, 42rem);
-    height: clamp(40rem, 25vw, 43rem);
-     flex-shrink: 0;
+.modal-overlay .modal {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: clamp(3rem, 5vw, 4rem);
 }
 
-.preview-heading {
-    font-family: var(--font-heading-secondary);
- font-size: var(--fs-h3);
-    font-weight: 700;
-    padding-left: 2rem;
-    line-height: 99%;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-color-burnt-peach);
-  padding-bottom: var(--space-5);
-  margin-bottom: 0;
-}
+    .modal {
+        display: flex;
+        flex-direction: column;
+        background: rgba(242, 237, 220, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 3px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        width: clamp(39rem, 25vw, 42rem);
+        height: clamp(40rem, 25vw, 43rem);
+        flex-shrink: 0;
+    }
 
-.preview-text {
-   padding-left: 2rem;
-   max-width: 35ch;
-}
+    .preview-heading {
+        font-family: var(--font-heading-secondary);
+        font-size: var(--fs-h3);
+        font-weight: 700;
+        padding-left: 2rem;
+        line-height: 99%;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color-burnt-peach);
+        padding-bottom: var(--space-5);
+        margin-bottom: 0;
+    }
 
-.preview-picture {
-    display: flex;
-    padding-left: 2rem;
-    max-width: 20rem;
-    height: auto;
-    padding-bottom: var(--space-9);
-}
+    .preview-text {
+        padding-left: 2rem;
+        max-width: 35ch;
+    }
 
-.modal-footer {
-    display: flex;
-    padding-left: 2rem;
-    gap: 1.5rem;
-    justify-content: end;
-    padding-right: 2rem;
-    margin-bottom: 2rem;
-}
+    .preview-picture {
+        display: flex;
+        padding-left: 2rem;
+        max-width: 20rem;
+        height: auto;
+        padding-bottom: var(--space-9);
+    }
 
-.modal-footer .btn {
-    width: 30%;
-    height: 95%;
-}
+    .modal-footer {
+        display: flex;
+        padding-left: 2rem;
+        gap: 1.5rem;
+        justify-content: end;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+    }
 
-.modal-footer .btn-primary {
-    background-color: var(--primary-color-burnt-peach);
-}
+    .modal-footer .btn {
+        width: 30%;
+        height: 95%;
+    }
 
-.modal-footer .btn-primary:hover {
-    background-color: var(--primary-color-brick-ember);
-}
+    .modal-footer .btn-primary {
+        background-color: var(--primary-color-burnt-peach);
+    }
 
-.modal-footer .btn-outline {
-  border-color: var(--primary-color-burnt-peach);
-}
+    .modal-footer .btn-primary:hover {
+        background-color: var(--primary-color-brick-ember);
+    }
 
-.modal-overlay[hidden] {
-  display: none !important;
+    .modal-footer .btn-outline {
+        border-color: var(--primary-color-burnt-peach);
+    }
+
+    .modal-overlay[hidden] {
+        display: none !important;
+    }
 }
