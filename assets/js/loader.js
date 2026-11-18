@@ -16,8 +16,16 @@ loadComponent(`header`, `components/header.html`).then(() => {
   const mobileMenu = document.getElementById('mobile-menu');
   const closeBtn = document.getElementById('mobile-close');
 
-  hamburger?.addEventListener('click', () => mobileMenu.classList.add('open'));
-  closeBtn?.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  hamburger?.addEventListener('click', () => {
+    document.querySelectorAll('.modal-overlay:not([hidden])').forEach(modal => {
+      modal.setAttribute('hidden', '');
+    });
+    mobileMenu.classList.add('open');
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+  });
 
   mobileMenu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => mobileMenu.classList.remove('open'));
@@ -38,5 +46,4 @@ async function loadComponent(selector, path) {
     console.error(`Fehler beim Laden: ${path}`, error);
   }
 }
-
 
