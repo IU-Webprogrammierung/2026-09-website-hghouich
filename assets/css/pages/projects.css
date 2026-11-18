@@ -45,8 +45,8 @@
 }
 
 .projects-grid .discipline button:focus-visible {
-  outline: 3px solid var(--primary-color-brick-ember);
-  outline-offset: -6px;
+    outline: 3px solid var(--primary-color-brick-ember);
+    outline-offset: -6px;
 }
 
 .discipline {
@@ -64,6 +64,7 @@
     color: inherit;
     text-align: center;
     transition: border-color 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 
 }
 
@@ -82,7 +83,25 @@
 .discipline:hover,
 .discipline:focus-visible {
     border-color: var(--primary-color-brick-ember);
+}
 
+@media (hover: hover) {
+    .discipline:hover {
+        transform: translateY(-6px) scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.10);
+        z-index: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .discipline {
+    transition: none;
+  }
+
+  .discipline:hover,
+  .discipline:focus-within {
+    transform: none;
+  }
 }
 
 .tile-deco {
@@ -255,6 +274,7 @@
 
     .discipline {
         border-radius: 0.4rem;
+
     }
 
     .tile-deco {
