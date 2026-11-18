@@ -1,22 +1,99 @@
 /* base styling*/
-@media (min-width: 1024px) and (max-width: 1920px) {
- .projects-stage {
-  position: relative;    
+
+.projects-stage {
+    position: relative;
 }
 
 .modal-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 .modal-overlay .modal {
-  margin-left: 0;
-  margin-top: 0;
-  margin-bottom: clamp(3rem, 5vw, 4rem);
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: clamp(3rem, 5vw, 4rem);
 }
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background: rgba(242, 237, 220, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 3px solid var(--primary-color-burnt-peach);
+    border-radius: var(--radius-l);
+    width: clamp(39rem, 25vw, 42rem);
+    height: clamp(40rem, 25vw, 43rem);
+    flex-shrink: 0;
+}
+
+.preview-heading {
+    font-family: var(--font-heading-secondary);
+    font-size: var(--fs-h3);
+    font-weight: 700;
+    padding-left: 2rem;
+    line-height: 99%;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color-burnt-peach);
+    padding-bottom: var(--space-5);
+    margin-bottom: 0;
+}
+
+.preview-text {
+    padding-left: 2rem;
+    max-width: 35ch;
+}
+
+.preview-picture {
+    display: flex;
+    padding-left: 2rem;
+    max-width: 20rem;
+    height: auto;
+    padding-bottom: var(--space-9);
+}
+
+.modal-footer {
+    display: flex;
+    padding-left: 2rem;
+    gap: 1.5rem;
+    justify-content: end;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modal-footer .btn {
+    width: 34%;
+    height: 95%;
+}
+
+.modal-footer .btn-primary {
+    background-color: var(--primary-color-burnt-peach);
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: var(--primary-color-brick-ember);
+}
+
+.modal-footer .btn-outline {
+    border-color: var(--primary-color-burnt-peach);
+}
+
+.modal-overlay[hidden] {
+    display: none !important;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+    .modal-overlay .modal {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: clamp(3rem, 5vw, 4rem);
+    }
 
     .modal {
         display: flex;
@@ -27,7 +104,7 @@
         border: 3px solid var(--primary-color-burnt-peach);
         border-radius: var(--radius-l);
         width: clamp(39rem, 25vw, 42rem);
-        height: clamp(40rem, 25vw, 43rem);
+        height: clamp(40rem, 25vw, 43.5rem);
         flex-shrink: 0;
     }
 
@@ -67,23 +144,248 @@
     }
 
     .modal-footer .btn {
-        width: 30%;
+        width: 34%;
         height: 95%;
     }
+}
 
-    .modal-footer .btn-primary {
-        background-color: var(--primary-color-burnt-peach);
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+    .modal-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: flex-start;
+        overflow: auto;
     }
 
-    .modal-footer .btn-primary:hover {
-        background-color: var(--primary-color-brick-ember);
+    .modal-overlay .modal {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: clamp(3rem, 5vw, 4rem);
     }
 
-    .modal-footer .btn-outline {
-        border-color: var(--primary-color-burnt-peach);
+    .modal {
+        display: flex;
+        flex-direction: column;
+        background: rgba(242, 237, 220, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 3px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        width: clamp(67rem, 75vw, 69rem);
+        height: clamp(30rem, 25vw, 32rem);
+        flex-shrink: 0;
     }
 
-    .modal-overlay[hidden] {
-        display: none !important;
+
+    .modal-footer {
+        display: flex;
+        padding-left: 2rem;
+        gap: 2rem;
+        justify-content: start;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .modal-footer .btn {
+        width: 12rem;
+        height: 3rem;
+    }
+
+    .modal-overlay .modal {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .modal-body {
+        flex: 1;
+        min-height: 0;
+    }
+
+    .modal-footer {
+        flex-shrink: 0;
+    }
+
+    .preview-picture {
+        position: relative;
+        display: flex;
+        justify-content: end;
+        margin-left: 33rem;
+        margin-top: -16rem;
+        max-width: 30rem;
+        height: auto;
+        padding-bottom: var(--space-9);
+        left: 0;
+    }
+
+    .preview-heading {
+        font-family: var(--font-heading-secondary);
+        font-size: var(--fs-h3);
+        font-weight: 700;
+        padding-left: 2rem;
+        line-height: 99%;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color-burnt-peach);
+        margin-top: var(--space-12);
+        padding-bottom: var(--space-10);
+        margin-bottom: 0;
+    }
+
+    .preview-text {
+        padding-left: 2rem;
+        max-width: 35ch;
+
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 744px) {
+
+
+
+    .modal-overlay .modal {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+
+    .modal-overlay {
+        position: fixed;
+        inset: 0;
+        display: flex;
+
+        align-items: flex-start;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        z-index: 9999;
+        padding: 1rem;
+        top: 12rem;
+    }
+
+    .modal-overlay .modal {
+        max-height: calc(100dvh - 2rem);
+    }
+
+    .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal {
+        display: flex;
+        flex-direction: column;
+        background: rgba(242, 237, 220, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 3px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        width: clamp(19rem, 93vw, 31rem);
+        height: clamp(34rem, 95vw, 34rem);
+        flex-shrink: 0;
+    }
+
+    .preview-text {
+        padding-left: 2rem;
+        max-width: 35ch;
+        padding-bottom: 0;
+    }
+
+    .preview-picture {
+        display: flex;
+        padding-left: 2rem;
+        max-width: 17rem;
+        height: auto;
+        padding-bottom: var(--space-2);
+        padding-top: 0;
+    }
+
+    .modal-footer {
+        display: flex;
+        padding-left: 2rem;
+        gap: 0.5rem;
+        justify-content: end;
+        padding-right: 1em;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .modal-footer .btn {
+        width: clamp(10rem, 15vw, 11rem);
+        height: clamp(0.5rem, 15vw, 2.8rem);
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}
+
+@media (min-width: 744px) and (max-width: 1023px) {
+    .modal {
+        display: flex;
+        flex-direction: column;
+        background: rgba(242, 237, 220, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 3px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        width: clamp(31rem, 55vw, 35rem);
+        height: clamp(26rem, 25vw, 29.5rem);
+        flex-shrink: 0;
+    }
+
+    .modal-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+    .modal-overlay .modal {
+          height: auto;   
+    }
+
+    .preview-heading {
+        font-family: var(--font-heading-secondary);
+        font-size: var(--fs-h3);
+        font-weight: 700;
+        padding-left: 2rem;
+        line-height: 99%;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color-burnt-peach);
+        padding-bottom: var(--space-5);
+        margin-bottom: 0;
+    }
+
+    .preview-text {
+        padding-left: 2rem;
+        max-width: 35ch;
+    }
+
+    .preview-picture {
+        display: flex;
+        padding-left: 2rem;
+        max-width: 20rem;
+        height: auto;
+        padding-bottom: var(--space-5);
+    }
+
+    .modal-footer {
+        display: flex;
+        padding-left: 2rem;
+        gap: 1.5rem;
+        justify-content: end;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .modal-footer .btn {
+        width: clamp(7rem, 26vw, 10rem);
+        height: clamp(1rem, 16vw, 3rem);
     }
 }
