@@ -411,4 +411,119 @@ position: relative;
     }
 
 
+    .page-loagh-app .image-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-16);
+        margin: 0;
+        row-gap: 2rem;
+        margin-right: var(--space-6);
+        column-gap: clamp(6rem, 25vw, 9rem);
+        justify-items: start;
+    }
+
+
+
+    .project-concept {
+        margin-top: var(--space-12);
+    }
+
+
+    .page-loagh-app .konkurrenzanalyse {
+        padding: 0.5rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        width: clamp(19rem, 68vw, 27rem);
+        height: auto;
+        justify-self: center;
+
+    }
+
+    .page-loagh-app .usps-list li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .page-loagh-app .usps-list li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .page-loagh-app .usps-list strong {
+        font-weight: 500;
+    }
+
+    .page-loagh-app .usps-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-family: var(--font-body);
+        font-size: var(--fs-body);
+        max-width: 45ch;
+        font-weight: 300;
+        justify-content: start;
+    }
+
+    .page-loagh-app .mittig {
+        display: flex;
+        padding: 0.5rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        position: relative;
+        margin-bottom: var(--space-12);
+        width: clamp(19rem, 78vw, 27rem);
+        height: auto;
+    }
+
+ .scribbles {
+     padding: 0.5rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        position: relative;
+        display: grid;
+        place-items: center;
+        width: clamp(19rem, 78vw, 27rem);
+        height: auto;
+        justify-self: center;
+        justify-items: center;
+    }
+
+      .page-loagh-app .text-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        padding-bottom: var(--space-12);
+        column-gap: 3rem;
+        row-gap: 3rem;
+        padding-top: var(--space-2);
+    }
+
+    .page-loagh-app .text-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+          padding-bottom: var(--space-12);
+        margin: 0;
+        align-items: center;
+        margin-top: 0;
+    }
+
+
 }
