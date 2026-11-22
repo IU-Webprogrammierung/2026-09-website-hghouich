@@ -44,7 +44,24 @@
     height: auto;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.5s ease, transform 0.5s ease-in;
+}
 
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
 
 @media (min-width: 1024px) and (max-width: 1920px) {
 
