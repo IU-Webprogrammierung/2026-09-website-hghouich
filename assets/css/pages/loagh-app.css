@@ -4,7 +4,7 @@
 }
 
 .loagh-app-slogan {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-color-brick-ember);
     padding-top: var(--space-1);
     padding-bottom: var(--space-2);
@@ -20,24 +20,24 @@
     background: rgba(242, 237, 220, 0.45);
     backdrop-filter: blur(12px);
     --webkit-backdrop-filter: blur(12px);
-    border: 2px solid var(--primary-color-brick-ember);
+    border: 1.5px solid var(--primary-color-brick-ember);
     border-radius: calc(var(--radius-l) + 0.5rem + 2px);
 }
 
 .phone-showcase img {
     position: relative;
     z-index: 1;
-    width: 110%;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0;
 }
 
 .page-loagh-app .app-mockups {
-    padding: 2rem;
+    padding: 1rem;
     background: rgba(225, 216, 195, 0.25);
     backdrop-filter: blur(12px);
-    border: 2px solid var(--primary-color-burnt-peach);
+    border: 1px solid var(--primary-color-burnt-peach);
     border-radius: var(--radius-l);
 }
 
@@ -70,7 +70,7 @@
         background: rgba(242, 237, 220, 0.45);
         backdrop-filter: blur(12px);
         --webkit-backdrop-filter: blur(12px);
-        border: 2px solid var(--primary-color-brick-ember);
+        border: 1.5px solid var(--primary-color-brick-ember);
         border-radius: calc(var(--radius-l) + 0.5rem + 2px);
     }
 
@@ -79,19 +79,19 @@
         grid-template-columns: repeat(2, minmax(0, 2fr));
         max-width: 100%;
         height: auto;
-        padding-bottom: var(--space-12);
-        justify-self: end;
+        padding-bottom: var(--space-20);
         margin: 0;
-        row-gap: 6rem;
+        row-gap: 4rem;
         align-content: start;
         margin-right: var(--space-6);
-        column-gap: 6rem;
+        column-gap: 4rem;
+        border-radius: calc(var(--radius-l) + 1rem + 1px);
     }
 
 
     .page-loagh-app .mockups-grid img {
         display: block;
-        width: 100%;
+        width: 90%;
         max-width: 100%;
         aspect-ratio: 312 / 221;
         height: auto;
@@ -108,11 +108,11 @@
         width: clamp(14rem, 38vw, 38rem);
     }
 
-    p {
+    .page-loagh-app main p {
         line-height: 1.6;
           font-family: var(--font-body);
         font-size: var(--fs-body);
-        max-width: 65ch;
+        max-width: 55ch;
         font-weight: 300;
     }
 
