@@ -39,7 +39,12 @@
     backdrop-filter: blur(12px);
     border: 1px solid var(--primary-color-burnt-peach);
     border-radius: var(--radius-l);
+    width: 100%;
+    max-width: 28rem;
+    height: auto;
 }
+
+
 
 @media (min-width: 1024px) and (max-width: 1920px) {
 
@@ -114,6 +119,8 @@
         font-size: var(--fs-body);
         max-width: 55ch;
         font-weight: 300;
+        padding-bottom: var(--space-2);
+        margin-right: var(--space-6);
     }
 
 .page-loagh-app .feature-list li {
@@ -346,9 +353,9 @@ position: relative;
         height: auto;
         padding-bottom: var(--space-18);
         margin: 0;
-        row-gap: 2rem;
-      justify-items: center;
-        column-gap: 2rem;
+        row-gap: 3rem;
+        justify-items: start;
+        column-gap: 3rem;
         border-radius: calc(var(--radius-l) + 1rem + 1px);
     }
 
@@ -362,11 +369,15 @@ position: relative;
     display: none;
   }
 
+       .page-loagh-app .collapsible:not(.is-expanded) .scribbles-extra {
+        display: none;
+    }
+
 .page-loagh-app .mockups-grid img {
         display: block;
         width: clamp(18rem, 68vw, 27rem);
         height: auto;
-        justify-items: center;
+        justify-self: center;
 }
 
  .page-loagh-app .feature-list li {
@@ -393,7 +404,7 @@ position: relative;
         gap: 2rem;
           font-family: var(--font-body);
         font-size: var(--fs-body);
-        max-width: 65ch;
+        max-width: 45ch;
         font-weight: 300;
         justify-content: center;
       
