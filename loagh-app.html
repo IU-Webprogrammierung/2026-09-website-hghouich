@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="assets/js/loader.js"></script>
+  <script src="assets/js/toggle.js" defer></script>
 </head>
 
 <body class="page-loagh-app">
@@ -37,22 +38,23 @@
       </div>
     </section>
           <h2>Flows</h2>
-    <div class="mockups-grid">
-      <img class="app-mockups" src="assets/images/uxui/Desktop/Mockups 1.png" alt="Mockup der App 1" width="312"
+    <div class="mockups-grid" id="mockups">
+      <img class="app-mockups " src="assets/images/uxui/Desktop/Mockups 1.png" alt="Mockup der App 1" width="312"
         height="221">
-      <img class="app-mockups" src="assets/images/uxui/Desktop/Mockups 2.png" alt="Mockup der App 2" width="312"
-        height="221">
-      <img class="app-mockups" src="assets/images/uxui/Desktop/Mockups 3.png" alt="Mockup der App 3" width="312"
-        height="221">
+      <img class="app-mockups mockup-extra" src="assets/images/uxui/Desktop/Mockups 2.png" alt="Mockup der App 2" width="312"
+        height="221" loading="lazy">
+      <img class="app-mockups mockup-extra" src="assets/images/uxui/Desktop/Mockups 3.png" alt="Mockup der App 3" width="312"
+        height="221" loading="lazy">
       <ul class="feature-list">
         <li><strong>Keine Bearbeitung, keine Filter:</strong> Profilvideos werden
           ausschließlich in Echtzeit direkt über die App aufgenommen.</li>
         <li><strong>Humor als Icebreaker:</strong> Durch kreative Prompts („Erzähl deinen
           schlechtesten Witz“) zeigen Nutzer:innen ihre echte Persönlichkeit. Ein Match entsteht erst, wenn beide über
           die Reaktionsvideos des anderen lachen!</li>
-        <li><strong>Qualität statt Quantität:</strong> QEin auf 10 Videos pro Tag
+        <li><strong>Qualität statt Quantität:</strong> Ein auf 10 Videos pro Tag
           limitierter Feed und maximal 3 Matches pro Woche verhindern Ablenkung und fördern echtes Interesse.</li>
       </ul>
+      <button class="toggle-btn btn btn-primary" type="button" data-toggle="#mockups" aria-expanded="false">Mehr anzeigen</button>
     </div>
 
     <h2 class="project-concept">Prozess</h2>
@@ -88,10 +90,10 @@
     <br>
     <img class="mittig" src="assets/images/uxui/Desktop/Styleguide.png" alt="Styleguide der App Loagh" width="950"
       height="647">
-
+    <h2>Scribbles </h2>
     <div class="text-image">
-      <div class="scribbles-tex">
-      <h3>Scribbles </h3>
+      
+      <div class="scribbles-tex" id="scribbles">
       <p>In den Scribbles wurden zentrale UI-Komponenten wie das Navigationsmenü, die Positionierung
         des
         Aufnahme-Buttons sowie die Rasteransichten für Reaktionen und Matches iterativ erarbeitet. Besondere
@@ -101,9 +103,10 @@
       <img class="scribbles" src="assets/images/uxui/Desktop/Scribbles 1.png" alt="Scribbles der App loagh" width="223"
         height="158">
       <img class="scribbles" src="assets/images/uxui/Desktop/Scribbles 2.png" alt="Scribbles der App loagh" width="223"
-        height="158">
+        height="158" loading="lazy">
       <img class="scribbles" src="assets/images/uxui/Desktop/Scribbles 3.png" alt="Scribbles der App loagh" width="223"
-        height="158">
+        height="158" loading="lazy">
+      <button class="toggle-btn btn btn-primary" type="button" data-toggle="#mockups" aria-expanded="false">Mehr anzeigen</button>
     </div>
 
     <div class="text-grid">
