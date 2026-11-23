@@ -22,6 +22,7 @@
     gap: clamp(2rem, 10vw, 20rem);
 }
 
+
 /* glass refraction */
 .global-navigation::before {
     content: "";
@@ -191,3 +192,41 @@
 .mobile-nav a.active {
     color: var(--primary-color-burnt-peach);
 }
+
+.mobile-navigation {
+  display: none;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 743px) {
+
+    
+    .global-navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+  }
+
+  .mobile-navigation .hamburger,
+  .mobile-navigation .theme-toggle-mobile {
+    position: static;      
+    inset: auto;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+    
+}
+
+
+
+
+
+
+
