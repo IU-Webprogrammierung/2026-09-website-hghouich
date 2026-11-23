@@ -31,7 +31,7 @@
     flex-shrink: 0;
 }
 
-.preview-heading {
+.modal-heading {
     font-family: var(--font-heading-secondary);
     font-size: var(--fs-h3);
     font-weight: 700;
@@ -88,7 +88,7 @@
 }
 
 .projects-stage:has(.modal-overlay:not([hidden])) .discipline {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 @media (min-width: 1024px) and (max-width: 1920px) {
@@ -111,7 +111,7 @@
         flex-shrink: 0;
     }
 
-    .preview-heading {
+    .modal-heading {
         font-family: var(--font-heading-secondary);
         font-size: var(--fs-h3);
         font-weight: 700;
@@ -224,7 +224,7 @@
         left: 0;
     }
 
-    .preview-heading {
+    .modal-heading {
         font-family: var(--font-heading-secondary);
         font-size: var(--fs-h3);
         font-weight: 700;
@@ -324,6 +324,8 @@
         padding-right: 8px;
     }
 
+
+
 }
 
 @media (min-width: 744px) and (max-width: 1023px) {
@@ -341,18 +343,18 @@
     }
 
     .modal-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-start;
-    overflow: hidden;
-}
-
-    .modal-overlay .modal {
-          height: auto;   
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
     }
 
-    .preview-heading {
+    .modal-overlay .modal {
+        height: auto;
+    }
+
+    .modal-heading {
         font-family: var(--font-heading-secondary);
         font-size: var(--fs-h3);
         font-weight: 700;
