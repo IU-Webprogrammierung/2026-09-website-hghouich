@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="assets/js/loader.js"></script>
   <script src="assets/js/toggle.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
 </head>
 
 <body class="page-loagh-app">
@@ -37,78 +38,90 @@
         </div>
       </div>
     </section>
-    <h2>Flows</h2>
-    <div class="mockups-grid" id="mockups">
-      <img class="app-mockups" src="assets/images/uxui/Desktop/Mockups 1.png" alt="Mockup der App 1" width="312"
-        height="221">
-      <img class="app-mockups mockup-extra" src="assets/images/uxui/Desktop/Mockups 2.png" alt="Mockup der App 2"
-        width="312" height="221" loading="lazy">
-      <img class="app-mockups mockup-extra" src="assets/images/uxui/Desktop/Mockups 3.png" alt="Mockup der App 3"
-        width="312" height="221" loading="lazy">
-      <ul class="feature-list">
-        <li><strong>Keine Bearbeitung, keine Filter:</strong> Profilvideos werden
-          ausschließlich in Echtzeit direkt über die App aufgenommen.</li>
-        <li><strong>Humor als Icebreaker:</strong> Durch kreative Prompts („Erzähl deinen
-          schlechtesten Witz“) zeigen Nutzer:innen ihre echte Persönlichkeit. Ein Match entsteht erst, wenn beide über
-          die Reaktionsvideos des anderen lachen!</li>
-        <li><strong>Qualität statt Quantität:</strong> Ein auf 10 Videos pro Tag
-          limitierter Feed und maximal 3 Matches pro Woche verhindern Ablenkung und fördern echtes Interesse.</li>
-      </ul>
-      <button class="toggle-btn btn btn-primary" type="button" data-toggle="#mockups" aria-expanded="false">Mehr
-        anzeigen</button>
-    </div>
 
-    <h2 class="project-concept">Prozess</h2>
-
-    <h3>User Research & Konkurrenzanalyse</h3>
-    <p>Durch die Analyse von über 30 Dating-Apps (unterteilt in die Kategorien Swipe-based, Video-based,
-      Community-basedund Blind Dating) wurde deutlich, dass die Gen Z weg vom perfekten Schein und hin zu echter
-      Transparenz tendiert. Loagh kombiniert die Anonymitäts-Spannung von Apps wie Blindmate gezielt
-      mit der Dynamik von direktem Video-Content.</p>
-
-    <div class="image-text">
-      <img class="konkurrenzanalyse" src="assets/images/uxui/Desktop/Konkurrenzanalyse.png"
-        alt="Konkurrenzanalyse der Loagh App: Vergleich von vier Dating-App-Kategorien nach Funktionen, USP und Videofeatures"
-        width="624" height="373">
-
-
-      <ul class="usps-list">
-        <h3>Die 3 Alleinstellungsmerkmale (USPs)</h3>
-        <li><strong> Reine Authentizität:</strong> Maximal 60-sekündige Profilvideos, die ohne
-          Upload-Funktion, Filter oder Schnitte direkt in der App entstehen. Die Limitierung auf 10 Videos pro Tag
-          schützt Nutzer:innen effektiv vor endlosem Social-Media-Scrolling.</li>
-        <li><strong>Laugh to Love:</strong> Lachen setzt Oxytocin und
-          Endorphine frei, die echte Nähe schaffen. Über humorvolle Prompts (Punchline, Dad Jokes, Memes) werden
-          spontane Reaktionsvideos ausgetauscht.</li>
-        <li><strong>Speed Sparks (Virtuelle First Dates):</strong> Bevor stundenlang geschrieben wird,
-          gibt es kurze, spielerische Videocalls oder Clip-Interaktionen. Erst wenn beide danach zustimmen, schaltet
-          sich der dauerhafte Chat frei (Permanent Match).</li>
-      </ul>
-    </div>
-
-    <img class="mittig" src="assets/images/uxui/Desktop/IA.png" alt="Informationsarchitektur der App Loagh" width="950"
-      height="346">
-    <img class="mittig" src="assets/images/uxui/Desktop/Styleguide.png" alt="Styleguide der App Loagh" width="950"
-      height="647">
-    <h2>Scribbles </h2>
-    <div class="text-image collapsible" id="scribbles">
-
-      <div class="scribbles-text">
-        <p>In den Scribbles wurden zentrale UI-Komponenten wie das Navigationsmenü, die Positionierung
-          des
-          Aufnahme-Buttons sowie die Rasteransichten für Reaktionen und Matches iterativ erarbeitet. Besondere
-          Aufmerksamkeit galt hierbei der Barrierefreiheit, der Daumen-Erreichbarkeit auf Mobilgeräten und ausreichendem
-          Weißraum für ein luftiges Interface.</p>
+    <section class="reveal">
+      <h2>Flows</h2>
+      <div class="mockups-grid" id="mockups">
+        <img class="app-mockups" src="assets/images/uxui/Desktop/Mockups 1.png" alt="Mockup der App 1" width="312"
+          height="221">
+        <img class="app-mockups mockup-extra" src="assets/images/uxui/Desktop/Mockups 2.png" alt="Mockup der App 2"
+          width="312" height="221" loading="lazy">
+        <img class="app-mockups mockup-extra" src="assets/images/uxui/Desktop/Mockups 3.png" alt="Mockup der App 3"
+          width="312" height="221" loading="lazy">
+        <ul class="feature-list">
+          <li><strong>Keine Bearbeitung, keine Filter:</strong> Profilvideos werden
+            ausschließlich in Echtzeit direkt über die App aufgenommen.</li>
+          <li><strong>Humor als Icebreaker:</strong> Durch kreative Prompts („Erzähl deinen
+            schlechtesten Witz“) zeigen Nutzer:innen ihre echte Persönlichkeit. Ein Match entsteht erst, wenn beide über
+            die Reaktionsvideos des anderen lachen!</li>
+          <li><strong>Qualität statt Quantität:</strong> Ein auf 10 Videos pro Tag
+            limitierter Feed und maximal 3 Matches pro Woche verhindern Ablenkung und fördern echtes Interesse.</li>
+        </ul>
+        <button class="toggle-btn btn btn-primary" type="button" data-toggle="#mockups" aria-expanded="false">Mehr
+          anzeigen</button>
       </div>
-      <img class="scribbles" src="assets/images/uxui/Desktop/Scribbles 1.png" alt="Scribbles der App loagh" width="223"
-        height="158">
-      <img class="scribbles scribbles-extra" src="assets/images/uxui/Desktop/Scribbles 2.png"
-        alt="Scribbles der App loagh" width="223" height="158" loading="lazy">
-      <img class="scribbles scribbles-extra" src="assets/images/uxui/Desktop/Scribbles 3.png"
-        alt="Scribbles der App loagh" width="223" height="158" loading="lazy">
-      <button class="toggle-btn btn btn-primary" type="button" data-toggle="#scribbles" aria-expanded="false">Mehr
-        anzeigen</button>
-    </div>
+    </section>
+
+    <section class="reveal">
+
+      <h2 class="project-concept">Prozess</h2>
+
+      <h3>User Research & Konkurrenzanalyse</h3>
+      <p>Durch die Analyse von über 30 Dating-Apps (unterteilt in die Kategorien Swipe-based, Video-based,
+        Community-basedund Blind Dating) wurde deutlich, dass die Gen Z weg vom perfekten Schein und hin zu echter
+        Transparenz tendiert. Loagh kombiniert die Anonymitäts-Spannung von Apps wie Blindmate gezielt
+        mit der Dynamik von direktem Video-Content.</p>
+
+
+      <div class="image-text">
+        <img class="konkurrenzanalyse" src="assets/images/uxui/Desktop/Konkurrenzanalyse.png"
+          alt="Konkurrenzanalyse der Loagh App: Vergleich von vier Dating-App-Kategorien nach Funktionen, USP und Videofeatures"
+          width="624" height="373">
+
+        <ul class="usps-list">
+          <h3>Die 3 Alleinstellungsmerkmale (USPs)</h3>
+          <li><strong> Reine Authentizität:</strong> Maximal 60-sekündige Profilvideos, die ohne
+            Upload-Funktion, Filter oder Schnitte direkt in der App entstehen. Die Limitierung auf 10 Videos pro Tag
+            schützt Nutzer:innen effektiv vor endlosem Social-Media-Scrolling.</li>
+          <li><strong>Laugh to Love:</strong> Lachen setzt Oxytocin und
+            Endorphine frei, die echte Nähe schaffen. Über humorvolle Prompts (Punchline, Dad Jokes, Memes) werden
+            spontane Reaktionsvideos ausgetauscht.</li>
+          <li><strong>Speed Sparks (Virtuelle First Dates):</strong> Bevor stundenlang geschrieben wird,
+            gibt es kurze, spielerische Videocalls oder Clip-Interaktionen. Erst wenn beide danach zustimmen, schaltet
+            sich der dauerhafte Chat frei (Permanent Match).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <img class="mittig" src="assets/images/uxui/Desktop/IA.png" alt="Informationsarchitektur der App Loagh"
+        width="950" height="346">
+      <img class="mittig" src="assets/images/uxui/Desktop/Styleguide.png" alt="Styleguide der App Loagh" width="950"
+        height="647">
+    </section>
+
+    <section class="reveal">
+      <h2>Scribbles </h2>
+      <div class="text-image collapsible" id="scribbles">
+
+        <div class="scribbles-text">
+          <p>In den Scribbles wurden zentrale UI-Komponenten wie das Navigationsmenü, die Positionierung
+            des
+            Aufnahme-Buttons sowie die Rasteransichten für Reaktionen und Matches iterativ erarbeitet. Besondere
+            Aufmerksamkeit galt hierbei der Barrierefreiheit, der Daumen-Erreichbarkeit auf Mobilgeräten und
+            ausreichendem
+            Weißraum für ein luftiges Interface.</p>
+        </div>
+        <img class="scribbles" src="assets/images/uxui/Desktop/Scribbles 1.png" alt="Scribbles der App loagh"
+          width="223" height="158">
+        <img class="scribbles scribbles-extra" src="assets/images/uxui/Desktop/Scribbles 2.png"
+          alt="Scribbles der App loagh" width="223" height="158" loading="lazy">
+        <img class="scribbles scribbles-extra" src="assets/images/uxui/Desktop/Scribbles 3.png"
+          alt="Scribbles der App loagh" width="223" height="158" loading="lazy">
+        <button class="toggle-btn btn btn-primary" type="button" data-toggle="#scribbles" aria-expanded="false">Mehr
+          anzeigen</button>
+      </div>
+    </section>
 
     <div class="text-grid">
       <p>Die Skizzen verdeutlichen das Herzstück von Loagh: das Antworten auf Videos mittels humorvoller Prompts (z.
@@ -122,8 +135,10 @@
       </p>
     </div>
 
-    <img class="mittig" src="assets/images/uxui/Desktop/Plakat.png" alt="Plakat der Loagh App" width="950" height="647">
-
+    <section class="reveal">
+      <img class="mittig" src="assets/images/uxui/Desktop/Plakat.png" alt="Plakat der Loagh App" width="950"
+        height="647">
+    </section>
   </main>
 
   <footer class="wrapper"></footer>
