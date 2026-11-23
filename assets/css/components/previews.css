@@ -1,42 +1,257 @@
-.preview-heading {
+/* base design */
+.page-preview .preview-heading {
+  font-family: var(--font-heading-secondary);
+  font-weight: 700;
+  color: var(--primary-color-burnt-peach);
+}
+
+.page-preview .preview-heading {
+  width: min-content;
+  line-height: 1.1;
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .preview-heading {
     font-family: var(--font-heading-secondary);
- font-size: var(--fs-h3);
+    font-size: var(--fs-h3);
     font-weight: 700;
-    padding-left: 2rem;
-}
+    color: var(--primary-color-burnt-peach);
+  }
 
-.projects-cards {
-    padding-left: 2rem;
+  
+  .projects-cards {
+    display: grid;
+grid-template-columns: repeat(2, 32rem);
     list-style: none;
-    padding-top: var(--space-8);
+    padding-top: var(--space-6);
+    margin: 0;
+        margin-inline: auto;
+        margin-right: 5rem;
+  }
+
+
+  .projects-cards li a {
+    position: relative;
+    display: block;
+    width: clamp(16rem, 62vw, 23rem);
+    height: auto;
+   margin-left: 2rem;
+    isolation: isolate;
+  }
+
+  .projects-cards li a .projectspreview {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-cards li a::before {
+    content: '';
+    position: absolute;
+    width: clamp(17.5rem, 68.5vw, 26rem);
+    height: clamp(11.5rem, 47vw, 17.5rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--primary-color-burnt-peach);
+    border-radius: var(--radius-l);
+    background: rgba(242, 237, 220, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: -1;
+
+  }
+
+ .page-preview .footer {
+    padding-top: var(--space-20);
+  }
 }
 
-.projectspreview {
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+.page-preview .preview-heading {
+    font-size: var(--fs-h3);
+  }
+
+  .projectspreview {
     position: relative;
     z-index: 1;
-    width: clamp(18rem, 27vw, 30rem);
+    width: clamp(22rem, 47vw, 26rem);
     height: auto;
-     padding-bottom: var(--space-12);
-}
-
-.projects-cards li a {
-  position: relative;
-  display: block;
-}
-
-.projects-cards li a::before {
-
- content: '';
-  position: absolute;
- inset: -1.5rem;
-  border: 2px solid var(--primary-color-burnt-peach);
-  border-radius: var(--radius-l);
-   transform: translate(4px, 4px);
-    z-index: 0;
-        width: clamp(16rem, 29.5vw, 28rem);
-        height: clamp(18rem, 10vw, 19rem);
-          background: rgba(242, 237, 220, 0.45);
-    backdrop-filter: blur(12px);
-    --webkit-backdrop-filter: blur(12px);
+    justify-self: center;
   }
-  
+
+
+  .projects-cards {
+    display: grid;
+grid-template-columns: repeat(2, 32rem);
+    justify-items: start;
+    list-style: none;
+    padding-top: var(--space-6);
+    margin: 0;
+  }
+
+
+  .projects-cards li a {
+    position: relative;
+    display: block;
+    width: clamp(16rem, 62vw, 23rem);
+    height: auto;
+margin-left: 2rem;
+    isolation: isolate;
+  }
+
+  .projects-cards li a .projectspreview {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-cards li a::before {
+    content: '';
+    position: absolute;
+    width: clamp(17.5rem, 68.5vw, 26rem);
+    height: clamp(11.5rem, 47vw, 17.5rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--primary-color-burnt-peach);
+    border-radius: var(--radius-l);
+    background: rgba(242, 237, 220, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: -1;
+
+  }
+
+ .page-preview .footer {
+    padding-top: var(--space-20);
+  }
+
+}
+
+@media (min-width: 744px) and (max-width: 1023px) {
+
+.page-preview .preview-heading {
+    font-size: var(--fs-h3);
+  }
+
+  .projectspreview {
+    position: relative;
+    z-index: 1;
+    width: clamp(22rem, 47vw, 26rem);
+    height: auto;
+    justify-self: center;
+  }
+
+
+  .projects-cards {
+    display: grid;
+    justify-items: center;
+    gap: clamp(5rem, 15vw, 7rem);
+    list-style: none;
+    padding: var(--space-2) 0 0;
+    margin: 0;
+  }
+
+
+  .projects-cards li a {
+    position: relative;
+    display: block;
+    width: clamp(16rem, 62vw, 23rem);
+    height: auto;
+    margin-inline: auto;
+    isolation: isolate;
+  }
+
+  .projects-cards li a .projectspreview {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-cards li a::before {
+    content: '';
+    position: absolute;
+    width: clamp(17.5rem, 68.5vw, 26rem);
+    height: clamp(11.5rem, 47vw, 17.5rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--primary-color-burnt-peach);
+    border-radius: var(--radius-l);
+    background: rgba(242, 237, 220, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: -1;
+
+  }
+
+ .page-preview .footer {
+    padding-top: var(--space-20);
+  }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 743px) {
+
+  .page-preview .preview-heading {
+    font-size: var(--fs-h3);
+  }
+
+  .projectspreview {
+    position: relative;
+    z-index: 1;
+    width: clamp(16rem, 27vw, 22rem);
+    height: auto;
+    justify-self: center;
+  }
+
+
+  .projects-cards {
+    display: grid;
+    justify-items: center;
+    gap: clamp(5rem, 15vw, 7rem);
+    list-style: none;
+    padding: var(--space-2) 0 0;
+    margin: 0;
+  }
+
+  .projects-cards li a {
+    position: relative;
+    display: block;
+    width: clamp(16rem, 59vw, 20rem);
+    height: auto;
+    margin-inline: auto;
+    isolation: isolate;
+  }
+
+  .projects-cards li a .projectspreview {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-cards li a::before {
+    content: '';
+    position: absolute;
+    width: clamp(17.5rem, 68.5vw, 23rem);
+    height: clamp(11.5rem, 45vw, 15.5rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--primary-color-burnt-peach);
+    border-radius: var(--radius-l);
+    background: rgba(242, 237, 220, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: -1;
+
+  }
+
+  .page-preview .footer {
+    padding-top: var(--space-20);
+  }
+
+}
