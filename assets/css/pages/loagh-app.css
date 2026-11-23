@@ -45,22 +45,22 @@
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(2rem);
-  transition: opacity 0.5s ease, transform 0.5s ease-in;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.5s ease, transform 0.5s ease-in;
 }
 
 .reveal.is-visible {
-  opacity: 1;
-  transform: none;
+    opacity: 1;
+    transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1920px) {
@@ -73,23 +73,19 @@
         height: auto;
         align-items: center;
         padding-bottom: var(--space-5);
+        margin-top: var(--space-12);
+        column-gap: 4rem;
+        row-gap: 3rem;
     }
 
-    .phone-showcase {
-        position: relative;
-        display: grid;
-        place-items: center;
-        width: min(100%, 35rem);
-        justify-self: flex-end;
-        margin-right: var(--space-20);
-    }
+
 
     .phone-showcase::before {
         content: '';
         position: absolute;
         inset: 15% 0;
         z-index: 0;
-        background: rgba(242, 237, 220, 0.45);
+        background: rgba(242, 237, 220, 0.25);
         backdrop-filter: blur(12px);
         --webkit-backdrop-filter: blur(12px);
         border: 1.5px solid var(--primary-color-brick-ember);
@@ -125,14 +121,12 @@
         display: grid;
         place-items: center;
         width: min(100%, 35rem);
-        justify-self: flex-end;
-        margin-right: var(--space-20);
-        width: clamp(14rem, 38vw, 38rem);
+        width: clamp(16rem, 38vw, 28rem);
     }
 
     .page-loagh-app main p {
         line-height: 1.6;
-          font-family: var(--font-body);
+        font-family: var(--font-body);
         font-size: var(--fs-body);
         max-width: 55ch;
         font-weight: 300;
@@ -140,22 +134,22 @@
         margin-right: var(--space-6);
     }
 
-.page-loagh-app .feature-list li {
-position: relative;
-  padding-left: 2rem;
-}
+    .page-loagh-app .feature-list li {
+        position: relative;
+        padding-left: 2rem;
+    }
 
-   .page-loagh-app .feature-list li::before {
-  content: '✦';
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--primary-color-brick-ember);
-}
+    .page-loagh-app .feature-list li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
 
-.page-loagh-app .feature-list strong {
-     font-weight: 700;
-}    
+    .page-loagh-app .feature-list strong {
+        font-weight: 700;
+    }
 
     .page-loagh-app .feature-list {
         list-style: none;
@@ -219,10 +213,9 @@ position: relative;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 100%;
         height: auto;
-        padding-bottom: var(--space-24);
+        padding-bottom: var(--space-12);
         margin: 0;
-        row-gap: 6rem;
-        margin-right: var(--space-6);
+        row-gap: 4rem;
         column-gap: clamp(6rem, 25vw, 9rem);
         align-items: center;
     }
@@ -242,11 +235,13 @@ position: relative;
     }
 
     .page-loagh-app .konkurrenzanalyse {
-        padding: 2rem;
+        padding: 1rem;
         background: rgba(225, 216, 195, 0.25);
         backdrop-filter: blur(12px);
         border: 1.5px solid var(--primary-color-burnt-peach);
         border-radius: var(--radius-l);
+        width: clamp(29rem, 78vw, 47rem);
+        height: auto;
 
     }
 
@@ -263,6 +258,8 @@ position: relative;
         position: relative;
         margin-top: var(--space-4);
         margin-bottom: var(--space-20);
+        width: clamp(29rem, 78vw, 47rem);
+        height: auto;
     }
 
     .page-loagh-app .scribbles {
@@ -323,15 +320,320 @@ position: relative;
     }
 }
 
-@media (min-width: 320px) and (max-width: 744px) {
+@media (min-width: 744px) and (max-width: 1023px) {
+
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .loagh-app-slogan {
+        padding-bottom: var(--space-8);
+    }
+
+    .intro-grid {
+        margin-bottom: var(--space-10);
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        padding-bottom: var(--space-5);
+        column-gap: 4rem;
+    }
+
+    .phone-showcase {
+        position: relative;
+        display: grid;
+        place-items: center;
+        justify-self: flex-end;
+        width: clamp(16rem, 41vw, 28rem);
+    }
+
+    .phone-showcase::before {
+        content: '';
+        position: absolute;
+        inset: 15% 0;
+        z-index: 0;
+        background: rgba(242, 237, 220, 0.25);
+        backdrop-filter: blur(12px);
+        --webkit-backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-brick-ember);
+        border-radius: calc(var(--radius-l) + 0.5rem + 2px);
+    }
+
+    .page-loagh-app .mockups-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-12);
+        margin: 0;
+        row-gap: 3rem;
+        align-content: center;
+        column-gap: 3rem;
+        border-radius: calc(var(--radius-l) + 1rem + 1px);
+    }
+
+
+    .page-loagh-app .mockups-grid img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 312 / 221;
+        height: auto;
+    }
+
+    .page-loagh-app main p {
+        line-height: 1.6;
+        font-family: var(--font-body);
+        font-size: var(--fs-body-small);
+        max-width: 60ch;
+        font-weight: 300;
+        padding-bottom: var(--space-2);
+    }
+
+    .page-loagh-app .feature-list li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .page-loagh-app .feature-list li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .page-loagh-app .feature-list strong {
+        font-weight: 700;
+    }
+
+    .page-loagh-app .feature-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-family: var(--font-body);
+        font-size: var(--fs-body-small);
+        max-width: 65ch;
+        font-weight: 300;
+        justify-content: center;
+
+    }
+
+
+    .page-loagh-app h2 {
+        font-family: var(--font-body);
+        font-size: var(--fs-h2);
+    }
+
+    .page-loagh-app h3 {
+        font-family: var(--font-body);
+        font-size: var(--fs-body-lg);
+        color: var(--primary-color-carbon-black);
+
+    }
+
+
+    .page-loagh-app .usps-list li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .page-loagh-app .usps-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: var(--font-body);
+        font-size: var(--fs-body-small);
+        max-width: 65ch;
+        font-weight: 300;
+        justify-content: center;
+        margin-bottom: 3rem;
+        margin-right: var(--space-6);
+    }
+
+    .page-loagh-app .usps-list li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .page-loagh-app .usps-list strong {
+        font-weight: 700;
+    }
+
+    .page-loagh-app .image-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-12);
+        margin: 0;
+        margin-right: var(--space-6);
+        column-gap: clamp(6rem, 25vw, 9rem);
+        align-items: center;
+    }
+
+
+    .project-concept {
+        margin-top: var(--space-12);
+    }
+
+
+    .image-text img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .page-loagh-app .konkurrenzanalyse {
+        padding: 1rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+
+    }
+
+    .page-loagh-app .mittig {
+        display: flex;
+        padding: 1rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        position: relative;
+        margin-top: var(--space-4);
+        margin-bottom: var(--space-18);
+        width: clamp(29rem, 78vw, 47rem);
+        height: auto;
+    }
+
+
+    .page-loagh-app .scribbles {
+        padding: 1rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+    }
+
+    .page-loagh-app .text-image {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 2fr));
+        max-width: 100%;
+        height: auto;
+        align-items: end;
+        padding-bottom: var(--space-12);
+        column-gap: var(--space-20);
+        column-gap: 3rem;
+        row-gap: 3rem;
+        padding-top: var(--space-2);
+    }
+
+
+    .page-loagh-app .text-image img,
+    .page-loagh-app .mockups-grid img {
+        width: clamp(24rem, 38vw, 38rem);
+        max-width: 100%;
+        height: auto;
+    }
+
+    .scribbles {
+        position: relative;
+        display: grid;
+        place-items: center;
+        width: min(70%, 35rem);
+        height: auto;
+        justify-self: start;
+        margin-right: var(--space-6);
+    }
+
+    .page-loagh-app .text-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-12);
+        margin: 0;
+        row-gap: 3rem;
+        margin-right: var(--space-6);
+        column-gap: clamp(6rem, 25vw, 9rem);
+        align-items: center;
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+ .intro-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        padding-bottom: var(--space-1);
+        margin-top: var(--space-12);
+        column-gap: 4rem;
+        row-gap: 3rem;
+    }
+
+    .page-loagh-app .mockups-grid {
+        padding-bottom: var(--space-6);
+    }
+
+ .page-loagh-app .image-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-16);
+        margin: 0;
+        row-gap: 2rem;
+        margin-right: var(--space-6);
+        column-gap: clamp(6rem, 25vw, 9rem);
+        justify-items: start;
+    }
+
+
+
+    .project-concept {
+        margin-bottom: var(--space-6);
+    }
+
+
+    .page-loagh-app .konkurrenzanalyse {
+        padding: 0.5rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        width: clamp(23rem, 58vw, 47rem);
+        height: auto;
+        justify-self: center;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 743px) {
 
 
 
     .loagh-app-slogan {
         padding-bottom: var(--space-8);
     }
-
-
 
     .phone-showcase::before {
         content: '';
@@ -344,8 +646,6 @@ position: relative;
         border: 1.5px solid var(--primary-color-brick-ember);
         border-radius: calc(var(--radius-l) + 0.5rem + 2px);
     }
-
-
 
     .intro-grid {
         margin-bottom: var(--space-10);
@@ -383,21 +683,21 @@ position: relative;
     }
 
     .page-loagh-app .mockups-grid:not(.is-expanded) .mockup-extra {
-    display: none;
-  }
-
-       .page-loagh-app .collapsible:not(.is-expanded) .scribbles-extra {
         display: none;
     }
 
-.page-loagh-app .mockups-grid img {
+    .page-loagh-app .collapsible:not(.is-expanded) .scribbles-extra {
+        display: none;
+    }
+
+    .page-loagh-app .mockups-grid img {
         display: block;
         width: clamp(18rem, 68vw, 27rem);
         height: auto;
         justify-self: center;
-}
+    }
 
- .page-loagh-app .feature-list li {
+    .page-loagh-app .feature-list li {
         position: relative;
         padding-left: 2rem;
     }
@@ -419,12 +719,12 @@ position: relative;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-          font-family: var(--font-body);
+        font-family: var(--font-body);
         font-size: var(--fs-body);
         max-width: 45ch;
         font-weight: 300;
         justify-content: center;
-      
+
     }
 
 
@@ -444,7 +744,7 @@ position: relative;
 
 
     .project-concept {
-        margin-top: var(--space-12);
+        margin-bottom: var(--space-6);
     }
 
 
@@ -454,7 +754,7 @@ position: relative;
         backdrop-filter: blur(12px);
         border: 1.5px solid var(--primary-color-burnt-peach);
         border-radius: var(--radius-l);
-        width: clamp(19rem, 68vw, 27rem);
+        width: clamp(20rem, 68vw, 37rem);
         height: auto;
         justify-self: center;
 
@@ -501,12 +801,12 @@ position: relative;
         margin-inline: auto;
         position: relative;
         margin-bottom: var(--space-12);
-        width: clamp(19rem, 78vw, 27rem);
+        width: clamp(20rem, 78vw, 37rem);
         height: auto;
     }
 
- .scribbles {
-     padding: 0.5rem;
+    .scribbles {
+        padding: 0.5rem;
         background: rgba(225, 216, 195, 0.25);
         backdrop-filter: blur(12px);
         border: 1.5px solid var(--primary-color-burnt-peach);
@@ -520,7 +820,7 @@ position: relative;
         justify-items: center;
     }
 
-      .page-loagh-app .text-image {
+    .page-loagh-app .text-image {
         display: grid;
         grid-template-columns: 1fr;
         max-width: 100%;
@@ -536,11 +836,12 @@ position: relative;
         display: grid;
         grid-template-columns: 1fr;
         height: auto;
-          padding-bottom: var(--space-12);
+        padding-bottom: var(--space-12);
         margin: 0;
         align-items: center;
         margin-top: 0;
     }
+
 
 
 }
