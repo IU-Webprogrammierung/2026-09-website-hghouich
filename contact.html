@@ -16,61 +16,85 @@
   <header class="site-header"></header>
 
   <main class="wrapper">
-    <section class="contact-intro">
-      <img src="assets/decor-elements/heading-arch/Desktop/Group 15.svg" class="heading-arch" aria-hidden="true">
-      <h1 class="heading1">Deine Vision. <br> Mein Skill.</h1>
-      <p class="contact-me">Du hast eine Vision. Ich habe die Skills. Schreib mir und lass uns gemeinsam etwas
-        Besonderes erschaffen.</p>
+
+    <img src="assets/decor-elements/heading-arch/Desktop/Group 15.svg" class="heading-arch" aria-hidden="true">
+
+    <h1 class="heading1">
+      <span>Deine Vision.</span>
+      <span>Mein Skill.</span>
+    </h1>
+
+    <p class="contact-me">Du hast eine Vision. Ich habe die Skills. Schreib mir und lass uns gemeinsam etwas
+      Besonderes erschaffen.</p>
 
 
     <div class="contact-grid">
       <form action="#" method="post">
         <div class="name-row">
-          <div>
-            <label for="fname">Vorname</label><br>
-            <input type="text" id="fname" name="fname" placeholder="Vorname" required><br>
+
+          <div class="field">
+            <label for="fname">Vorname</label>
+            <input type="text" id="fname" name="fname" placeholder="Vorname" required>
           </div>
-          <div>
-            <label for="lname">Nachname</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Nachname" required><br>
+
+          <div class="field">
+            <label for="lname">Nachname</label>
+            <input type="text" id="lname" name="lname" placeholder="Nachname" required>
           </div>
         </div>
-        <label for="email">E-Mail Adresse</label><br>
-        <input type="email" id="email" name="email" placeholder="E-Mail Adresse" required><br>
-        <label for="subject">Projekt-Kategorie</label><br>
 
-        <select id="subject" name="subject" required>
-          <option value="" disabled selected>Kategorie Auswählen</option>
-          <option value="UX/UI & Webdesign">UX/UI & Webdesign</option>
-          <option value="Frontend Development">Frontend Development</option>
-          <option value="Graphic Design & Branding">Graphic Design & Branding</option>
-          <option value="3D / Motion Design">3D / Motion Design</option>
-          <option value="Sonstige Anfrage">Sonstige Anfrage</option>
-        </select><br>
+        <div class="field">
+          <label for="email">E-Mail Adresse</label>
+          <input type="email" id="email" name="email" placeholder="E-Mail Adresse" required>
+        </div>
+
+        <div class="field">
+          <label for="subject">Projekt-Kategorie</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Kategorie Auswählen</option>
+            <option value="UX/UI & Webdesign">UX/UI & Webdesign</option>
+            <option value="Frontend Development">Frontend Development</option>
+            <option value="Graphic Design & Branding">Graphic Design & Branding</option>
+            <option value="3D / Motion Design">3D / Motion Design</option>
+            <option value="Sonstige Anfrage">Sonstige Anfrage</option>
+          </select>
+        </div>
 
 
-        <label class="send-msg" for="msg">Nachricht</label><br>
+        <div class="field">
+          <div class="msg-box-btn">
+            <label class="send-msg" for="msg">Nachricht</label>
+            <textarea id="msg" name="Nachricht" rows="7" cols="40" placeholder="Nachricht schreiben..."
+              required></textarea>
+          <button class="btn btn-primary" type="submit">Senden</button>
+        </div>
+        </div>
 
-        <textarea id="msg" name="Nachricht" rows="7" cols="40" placeholder="Nachricht schreiben..."
-          required></textarea><br>
-        <button class="btn btn-primary" type="submit">Senden</button>
       </form>
+
       <aside>
+
         <div class="personal-contact">
-        <h2 class="contacts-heading">Hier erreichst du mich persönlich:</h2>
-        <a href="mailto:ghouichhiba@gmail.com">
-          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-          ghouichhiba@gmail.com
-        </a><br>
-        <a href="https://www.linkedin.com/in/hiba-ghouich" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+
+          <h2 class="contacts-heading">
+            <span>Hier erreichst du</span>
+            <span>mich persönlich:</span>
+          </h2>
+
+          <a href="mailto:ghouichhiba@gmail.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>ghouichhiba@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/hiba-ghouich" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             <span>Hiba Ghouich</span>
           </a>
-        <a href="https://www.instagram.com/hiba.sstudio" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
-          @hiba.sstudio
-        </a>
+          <a href="https://www.instagram.com/hiba.sstudio" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+            <span>@hiba.sstudio</span>
+          </a>
         </div>
+
       </aside>
     </div>
   </main>
