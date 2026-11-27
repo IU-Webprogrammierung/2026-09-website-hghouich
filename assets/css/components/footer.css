@@ -3,7 +3,8 @@
     margin-top: 0;
      padding-left: var(--space-8);
     padding-right: var(--space-8);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -46,6 +47,14 @@
   color: var(--primary-color-burnt-peach);
   padding-right: clamp(var(--space-1), 1vw, var(--space-2));
   right: 100%;
+}
+
+
+.back-to-top {
+    position: fixed;
+    right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 100;
 }
 
 .home {
