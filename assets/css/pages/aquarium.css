@@ -1,0 +1,604 @@
+.page-3d h1 {
+    color: var(--primary-color-brick-ember);
+    padding-top: var(--space-5);
+}
+
+.page-3d h2 {
+    font-family: var(--font-body);
+}
+
+
+.page-3d h3 {
+    font-family: var(--font-body);
+    color: var(--primary-color-carbon-black);
+
+}
+
+.page-3d .model {
+    padding: 1rem;
+    background: rgba(225, 216, 195, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--primary-color-burnt-peach);
+    border-radius: var(--radius-l);
+
+}
+
+
+.page-3d main p {
+    line-height: 1.6;
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    max-width: 55ch;
+    font-weight: 300;
+    padding-bottom: var(--space-2);
+    margin-right: var(--space-6);
+}
+
+
+.page-3d main img {
+    padding: 1rem;
+    background: rgba(225, 216, 195, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--primary-color-burnt-peach);
+    border-radius: var(--radius-l);
+}
+
+.page-3d .sketch-n-process li {
+    list-style: none;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.5s ease, transform 0.10s ease-in;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+
+
+    .page-3d main p {
+        line-height: 1.6;
+        font-family: var(--font-body);
+        font-size: var(--fs-body);
+        max-width: 55ch;
+        font-weight: 300;
+        padding-bottom: var(--space-2);
+        margin-right: var(--space-6);
+    }
+
+    .page-3d .mittig {
+        display: flex;
+        padding: 2rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        align-items: first baseline;
+        justify-content: center;
+        margin-inline: auto;
+        position: relative;
+        margin-top: var(--space-4);
+        margin-bottom: var(--space-20);
+        width: clamp(29rem, 78vw, 57rem);
+        height: auto;
+    }
+
+    .page-3d .sketch-n-process li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .page-3d .sketch-n-process li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .page-3d .sketch-n-process strong {
+        font-weight: 700;
+    }
+
+    .page-3d .sketch-n-process {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-family: var(--font-body);
+        font-size: var(--fs-body);
+        max-width: 55ch;
+        font-weight: 300;
+        justify-content: center;
+        margin-bottom: 3rem;
+        margin-right: var(--space-6);
+    }
+
+    .page-3d .sketch-image-text {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-24);
+        margin: 0;
+        row-gap: 4rem;
+        column-gap: clamp(6rem, 25vw, 9rem);
+        align-items: center;
+        padding-top: var(--space-2);
+
+    }
+
+    .page-3d h2 {
+        font-family: var(--font-body);
+        font-size: var(--fs-h2);
+    }
+
+
+    .page-3d h3 {
+        font-family: var(--font-body);
+        font-size: var(--fs-body-lg);
+        color: var(--primary-color-carbon-black);
+    }
+
+    .page-3d .sketch-image-text img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .page-3d .sketch {
+        width: clamp(29rem, 78vw, 47rem);
+        height: auto;
+    }
+
+    .project-concept {
+        margin-top: var(--space-12);
+    }
+
+    .page-3d .image-3d-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 24rem);
+        row-gap: 5rem;
+        column-gap: 7rem;
+        width: fit-content;
+        margin-inline: auto;
+        justify-content: center;
+        padding-bottom: var(--space-20);
+        padding-top: var(--space-12);
+    }
+
+
+    .page-3d .image-3d-grid img {
+        display: block;
+        width: clamp(22rem, 22vw, 24rem);
+        height: auto;
+        margin-inline: auto;
+
+    }
+
+    .image-3d-text img {
+        display: block;
+        width: clamp(23rem, 28vw, 27rem);
+        height: auto;
+        margin-inline: auto;
+
+    }
+
+    .image-3d-text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5rem;
+        column-gap: 4rem;
+        width: fit-content;
+        margin-inline: auto;
+        justify-content: center;
+        padding-bottom: var(--space-20);
+        padding-top: var(--space-12);
+    }
+
+    .page-3d .image-3d-text p {
+        max-width: 45ch;
+        margin: 0;
+        text-align: left;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+
+    .page-3d main p {
+        line-height: 1.6;
+        font-family: var(--font-body);
+        font-size: var(--fs-body);
+        max-width: 55ch;
+        font-weight: 300;
+        padding-bottom: var(--space-2);
+        margin-right: var(--space-6);
+    }
+
+    .page-3d .mittig {
+        display: flex;
+        padding: 2rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        align-items: first baseline;
+        justify-content: center;
+        margin-inline: auto;
+        position: relative;
+        margin-top: var(--space-4);
+        margin-bottom: var(--space-20);
+        width: clamp(29rem, 78vw, 57rem);
+        height: auto;
+    }
+
+    .page-3d .sketch-n-process li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .page-3d .sketch-n-process li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .page-3d .sketch-n-process strong {
+        font-weight: 700;
+    }
+
+    .page-3d .sketch-image-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-16);
+        margin: 0;
+        row-gap: 2rem;
+        margin-right: var(--space-6);
+        column-gap: clamp(6rem, 25vw, 9rem);
+        justify-items: start;
+    }
+
+    .page-3d .sketch {
+        width: clamp(23rem, 58vw, 47rem);
+        height: auto;
+        justify-self: center;
+    }
+
+
+
+}
+
+
+@media (min-width: 744px) and (max-width: 1023px) {
+
+
+    .page-3d main p {
+        line-height: 1.6;
+        font-family: var(--font-body);
+        font-size: var(--fs-body-small);
+        max-width: 55ch;
+        font-weight: 300;
+        padding-bottom: var(--space-2);
+        margin-right: var(--space-6);
+    }
+
+    .page-3d .mittig {
+        display: flex;
+        padding: 2rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-l);
+        align-items: first baseline;
+        justify-content: center;
+        margin-inline: auto;
+        position: relative;
+        margin-top: var(--space-4);
+        margin-bottom: var(--space-20);
+        width: clamp(29rem, 78vw, 47rem);
+        height: auto;
+    }
+
+    .page-3d .sketch-n-process li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .page-3d .sketch-n-process li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .page-3d .sketch-n-process strong {
+        font-weight: 700;
+    }
+
+    .page-3d .sketch-n-process {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-family: var(--font-body);
+        font-size: var(--fs-body-small);
+        max-width: 55ch;
+        font-weight: 300;
+        justify-content: center;
+        margin-bottom: 3rem;
+        margin-right: var(--space-6);
+    }
+
+    .page-3d .sketch-image-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-12);
+        margin: 0;
+        margin-right: var(--space-6);
+        column-gap: clamp(6rem, 25vw, 9rem);
+        align-items: center;
+    }
+
+
+
+    .page-3d .image-3d-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+        column-gap: 5rem;
+        width: fit-content;
+        margin-inline: auto;
+        justify-content: center;
+        padding-bottom: var(--space-24);
+        padding-top: var(--space-12);
+    }
+
+
+    .image-3d-text img:nth-of-type(1) {
+        order: 1;
+    }
+
+    .image-3d-text p:nth-of-type(1) {
+        order: 2;
+    }
+
+    .image-3d-text p:nth-of-type(2) {
+        order: 5;
+    }
+
+    .image-3d-text img:nth-of-type(2) {
+        order: 4;
+    }
+
+    .image-3d-text p:nth-of-type(3) {
+        order: 3;
+    }
+
+    .image-3d-text p:nth-of-type(4) {
+        order: 6;
+    }
+
+
+    .page-3d .image-3d-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3.5rem;
+        width: 100%;
+        margin-inline: 0;
+        padding-bottom: var(--space-20);
+    }
+
+    .page-3d .image-3d-text p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .page-3d img.shader-node-1 {
+        display: block;
+        width: clamp(23rem, 52vw, 28rem);
+        height: auto;
+        justify-self: left;
+        margin-top: var(--space-5);
+    }
+
+    .page-3d img.shader-node-2 {
+        display: block;
+        width: clamp(23rem, 52vw, 28rem);
+        height: auto;
+        justify-self: left;
+        margin-top: var(--space-10);
+    }
+
+    .page-3d .model {
+        width: clamp(15rem, 32vw, 26rem);
+        height: auto;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 743px) {
+
+
+    .page-3d main p {
+        line-height: 1.6;
+        font-family: var(--font-body);
+        font-size: var(--fs-body-small);
+        max-width: 45ch;
+        font-weight: 300;
+        padding-bottom: var(--space-2);
+        margin-right: var(--space-6);
+    }
+
+    .page-3d .mittig {
+        display: flex;
+        padding: 0.5rem;
+        background: rgba(225, 216, 195, 0.25);
+        backdrop-filter: blur(12px);
+        border: 1.5px solid var(--primary-color-burnt-peach);
+        border-radius: var(--radius-m);
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        position: relative;
+        margin-top: var(--space-4);
+        margin-bottom: var(--space-12);
+        width: clamp(18rem, 83vw, 28rem);
+        height: auto;
+    }
+
+    .page-3d .sketch-n-process li {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .page-3d .sketch-n-process li::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .page-3d .sketch-n-process strong {
+        font-weight: 700;
+    }
+
+    .page-3d .sketch-n-process {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-family: var(--font-body);
+        font-size: var(--fs-body-small);
+        max-width: 55ch;
+        font-weight: 300;
+        justify-content: center;
+        margin-bottom: 3rem;
+        margin-right: var(--space-6);
+    }
+
+    .page-3d .sketch-image-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: var(--space-10);
+        margin: 0;
+        margin-right: var(--space-6);
+        column-gap: clamp(6rem, 25vw, 9rem);
+        justify-items: start;
+    }
+
+    .page-3d .sketch {
+        padding: 0.5rem;
+        width: clamp(20rem, 68vw, 37rem);
+        height: auto;
+        justify-self: center;
+    }
+
+
+    .page-3d .image-3d-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+        width: fit-content;
+        margin-inline: auto;
+        justify-content: center;
+        padding-bottom: var(--space-24);
+        padding-top: var(--space-12);
+    }
+
+    .page-3d .model {
+        padding: 0.5rem;
+        width: clamp(9rem, 35vw, 12rem);
+        height: auto;
+        justify-self: center;
+    }
+
+    .image-3d-text img:nth-of-type(1) {
+        order: 1;
+        padding: 0.5rem;
+    }
+
+    .image-3d-text p:nth-of-type(1) {
+        order: 2;
+    }
+
+    .image-3d-text p:nth-of-type(2) {
+        order: 5;
+    }
+
+    .image-3d-text img:nth-of-type(2) {
+        order: 4;
+        padding: 0.5rem;
+    }
+
+    .image-3d-text p:nth-of-type(3) {
+        order: 3;
+    }
+
+    .image-3d-text p:nth-of-type(4) {
+        order: 6;
+    }
+
+
+    .page-3d .image-3d-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3.5rem;
+        width: 100%;
+        margin-inline: 0;
+        padding-bottom: var(--space-16);
+    }
+
+    .page-3d .image-3d-text p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-3d img.shader-node-1 {
+        display: block;
+        width: clamp(20rem, 68vw, 37rem);
+        height: auto;
+        justify-self: left;
+        margin-top: var(--space-5);
+
+    }
+
+    .page-3d img.shader-node-2 {
+        display: block;
+        width: clamp(20rem, 68vw, 37rem);
+        height: auto;
+        justify-self: left;
+        margin-top: var(--space-10);
+            
+    }
+
+}
