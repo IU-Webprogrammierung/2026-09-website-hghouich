@@ -1,7 +1,4 @@
-/*
- * Hinweis: Die Kommentare in dieser Datei dienen meinem eigenen Verständnis
- * und zur Dokumentation des Codes während des Lernprozesses.
- */
+
 loadComponent(`header`, `components/header.html`).then(() => {
   const navLinks = document.querySelectorAll('.global-navigation a');
   navLinks.forEach(link => {
@@ -46,4 +43,7 @@ async function loadComponent(selector, path) {
     console.error(`Fehler beim Laden: ${path}`, error);
   }
 }
+
+
+
 
