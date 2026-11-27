@@ -9,7 +9,7 @@
 
 .error-code-decor {
     position: absolute;
-    width: clamp(12rem, 35vw, 15rem);
+    width: clamp(12rem, 25vw, 15rem);
     height: auto;
     top: clamp(4rem, 12vw, 14rem);
     left: 50%;
@@ -54,6 +54,11 @@
     width: fit-content;
     margin: 2rem auto 0;
 
+.page-error {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
 
 }
 
@@ -77,28 +82,136 @@
     height: 100hv;
 }
 
-@media (max-width: 1023px) {}
-
-
-@media (min-width: 1024px) {}
-
-
-@media (max-width: 1920px) {}
-
-@media (max-width: 744px) {
-
-    .circle-1,
+@media (min-width: 1024px) and (max-width: 1920px) {
+  
+     .circle-1,
     .circle-2 {
-        width: 70%;
+        width: 29%;
+        height: auto;
+    }
+
+  .circle-1 {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    right: 0;
+}
+
+    .page-error .copyright {
+        display: none;
+    }
+
+
+    .page-error footer {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+
+  .circle-1,
+    .circle-2 {
+        width: 18%;
         height: auto;
     }
 
     .circle-1 {
-        top: 44%;
+        top: 64%;
+    }
+
+    .circle-2 {
+        top: 14%;
+    }
+
+    .page-error .copyright {
+        display: none;
+    }
+    
+
+}
+
+
+
+
+@media (min-width: 744px) and (max-width: 1023px) {
+
+     .circle-1,
+    .circle-2 {
+        width: 35%;
+        height: auto;
+    }
+
+    .circle-1 {
+        top: 76%;
+    }
+
+    .circle-2 {
+        top: 14%;
+    }
+
+    .page-error .copyright {
+        display: none;
+    }
+    
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+     .circle-1,
+    .circle-2 {
+        width: 29%;
+        height: auto;
+    }
+
+    .circle-1 {
+        top: 66%;
+
+    }
+
+
+    .circle-2 {
+        top: 4%;
+    }
+}
+
+
+@media (min-width: 471px) and (max-width: 744px) {
+
+    .circle-1,
+    .circle-2 {
+        width: 35%;
+        height: auto;
+    }
+
+    .circle-1 {
+        top: 76%;
 
     }
 
     .circle-2 {
-        top: 30%;
+        top: 34%;
     }
+
+   
+}
+
+@media (min-width: 320px) and (max-width: 470px) {
+
+    .circle-1,
+    .circle-2 {
+        width: 45%;
+        height: auto;
+    }
+
+    .circle-1 {
+        top: 79%;
+
+    }
+
+    .circle-2 {
+        top: 39%;
+    }
+
+   
 }
