@@ -3,20 +3,29 @@
     color: var(--primary-color-carbon-black);
 }
 
-.home .footer {
-    padding-bottom: var(--space-3);
-    padding-top: var(--space-1);
-    padding-left: 0;
-}
+
 
 .home h2 {
     color: var(--primary-color-carbon-black);
 }
 
-.hero-section {
+.home {
+    height: 100dvh;
     overflow: hidden;
-    height: 100hv;
+    display: flex;
+    flex-direction: column;
 }
+
+.home main {
+    flex: 1;
+    min-height: 0;
+}
+
+.hero-section {
+    height: 100%;
+    overflow: hidden;
+}
+
 
 
 /* breakpoints */
@@ -62,9 +71,9 @@
 
     .oval-deco {
         position: absolute;
-        width: clamp(18rem, 10vw, 24rem);
-        height: auto;
-        transform: translate(-50%, -50%);
+        width: clamp(11rem, 12vw, 24rem);
+        top: clamp(20.2rem, 38vw, 21.5rem);
+        left: clamp(12.4rem, 20.33vw, 20rem);
     }
 
     #animated-text {
@@ -91,7 +100,7 @@
         position: absolute;
         top: 66.9%;
         left: clamp(42rem, 68vw, 120rem);
-        width: clamp(15rem, 25vw, 330px);
+        width: clamp(15rem, 29vw, 330px);
         height: auto;
     }
 
@@ -99,7 +108,7 @@
         position: absolute;
         right: -50px;
         top: 66.9%;
-        width: clamp(15rem, 30vw, 20rem);
+        width: clamp(2rem, 30vw, 10rem);
         height: auto;
     }
 
@@ -122,7 +131,6 @@
         position: absolute;
         right: -0.7rem;
         top: 20%;
-        width: 12rem;
         height: auto;
     }
 
@@ -144,8 +152,8 @@
         position: absolute;
         width: clamp(6.6rem, calc(5rem + 14vw), 20rem);
         height: auto;
-        top: clamp(27.6rem, 31.6vw, 33rem);
-       left: clamp(12rem, 37.33vw, 28rem);
+        top: clamp(22rem, 27vw, 26.7rem);
+        left: clamp(12rem, 25vw, 17.9rem);
     }
 
     .btn {
@@ -168,6 +176,7 @@
     }
 
 }
+
 
 @media (max-width: 1023px) {
 
@@ -211,19 +220,19 @@
 
     .footer {
         display: flex;
-      
+
         padding-left: 0;
     }
 
     .oval-deco {
-         position: absolute;
+        position: absolute;
         width: clamp(11rem, 12vw, 24rem);
-          top: clamp(20.9rem, 19vw, 21rem);
-       left: clamp(12.6rem, 20.33vw, 20rem);
+        top: clamp(20.9rem, 19vw, 21rem);
+        left: clamp(12.6rem, 20.33vw, 20rem);
     }
 
     .decor-arc-small {
-          position: absolute;
+        position: absolute;
         top: 66.9%;
         left: clamp(5rem, 50vw, 80rem);
         width: clamp(19rem, 50vw, 20rem);
@@ -231,24 +240,78 @@
     }
 
     .decor-arc-large {
-         width: clamp(10rem, 19vw, 18rem);
+        width: clamp(10rem, 19vw, 18rem);
     }
 }
 
-@media (max-width: 744px) {
+@media (min-width: 744px) and (max-width: 1023px) {
 
-
-    .wrapper {
-        padding-block: 0;
-        padding-block: 0;
-        margin-top: var(--space-3);
-        margin-right: var(--space-1);
-        margin-left: var(--space-3)
+    .hero-section h1,
+    .hero-section h2 {
+        padding: 0;
+        margin: var(--space-1);
+        margin-top: 0;
+        padding-top: 0;
     }
 
-    .global-navigation {
+    .hero-section h1,
+    .hero-section h2 {
+        padding: 0;
+        margin: var(--space-1);
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .hero-title {
+        font-family: var(--font-heading-primary);
+        font-weight: 900;
+        color: var(--primary-color-carbon-black);
+        font-size: clamp(2rem, calc(0.4rem + 6.25vw), 3.9rem)
+    }
+
+    .hero-subtitle {
+        font-family: var(--font-sub-heading);
+        font-weight: 600;
+        font-size: clamp(1.5rem, 2vw, 2.6rem);
+    }
+
+    .accent-text {
+        font-weight: 600;
+        color: var(--primary-color-brick-ember);
+    }
+
+    .decor-arch-small-mobile {
         display: none;
     }
+
+    .footer {
+        display: flex;
+
+        padding-left: 0;
+    }
+
+    .oval-deco {
+        position: absolute;
+        width: clamp(11rem, 12vw, 24rem);
+        top: clamp(20.2rem, 38vw, 21.5rem);
+        left: clamp(12.4rem, 20.33vw, 20rem);
+    }
+
+    .decor-arc-small {
+        position: absolute;
+        top: 66.9%;
+        left: clamp(5rem, 50vw, 80rem);
+        width: clamp(19rem, 50vw, 20rem);
+        height: auto;
+    }
+
+    .decor-arc-large {
+        width: clamp(10rem, 19vw, 18rem);
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 743px) {
 
     .hamburger {
         display: flex;
@@ -265,6 +328,16 @@
         font-size: var(--fs-hero);
     }
 
+    .hero-subtitle {
+        font-size: clamp(1.2rem, 4vw, 2.5rem);
+    }
+
+    .oval-deco {
+        position: absolute;
+        width: clamp(9.5rem, 32vw, 24rem);
+        top: clamp(20rem, 46vw, 20rem);
+        left: clamp(8.8rem, 26vw, 22rem);
+    }
 
     .hero-tag-line {
         text-align: center;
@@ -273,16 +346,12 @@
 
     .hero-buttons {
         gap: var(--space-3);
-        padding-top: clamp(10rem, 29vw, 20rem);
-        width: 78%;
+        padding-top: clamp(12rem, 25vw, 24rem);
+        height: 60%;
     }
 
     .decor-arc-small {
         display: none;
-    }
-
-    .btn {
-        padding: 0.55rem;
     }
 
     .decor-arc-large {
@@ -293,19 +362,13 @@
         display: flex;
         position: absolute;
         left: 0;
-        width: clamp(14rem, 38vw, 18rem);
+        width: clamp(13rem, 38vw, 15rem);
         padding-top: clamp(4rem, 2vw, 6rem);
         height: auto;
     }
 
-
-    .oval-deco {
-        top: clamp(24.7rem, 27.78vw, 25rem);
-        position: absolute;
-        display: flex;
-        left: clamp(10rem, 30vw, 11rem);
-        top: clamp(22rem, 50vw, 25rem);
-        width: clamp(5rem, 4vw, 15 rem);
+    .home .btn {
+        padding: 0;
     }
 
     .copyright,
