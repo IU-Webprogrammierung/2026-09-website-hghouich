@@ -10,18 +10,16 @@
     font-weight: 600;
     color: var(--primary-color-burnt-peach);
     margin-bottom: var(--space-4);
-    margin-top: var(--space-8);
+    margin-top: var(--space-1);
 }
 
-.heading-arch-2 {
-    position: absolute;
-    width: 33rem;
-    height: auto;
-    left: 0%;
-    padding-top: var(--space-2);
-    transform: translateX(-0%);
-}
 
+
+.page-datenschutz .heading-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
 
 .page-datenschutz li {
@@ -42,12 +40,75 @@
 }
 
 
-@media (max-width: 1023px) {}
+@media (min-width: 1024px) and (max-width: 1920px) {
+      
+    .heading-arch-2 {
+          position: absolute;
+        width: clamp(21rem, 75vw, 38rem);
+        height: auto;
+        left: -7%;
+        padding-top: var(--space-2);
+        transform: translateX(-0%);
+        bottom: 13%;
+    }
+
+    .page-datenschutz h1 {
+        font-size: clamp(1.4rem, 4vw, 2rem);
+    }
+}
 
 
-@media (min-width: 1024px) {}
+@media (min-width: 744px) and (max-width: 1023px) {
+
+  .heading-arch-2 {
+        position: absolute;
+        width: clamp(21rem, 75vw, 38rem);
+        height: auto;
+        left: -14%;
+        padding-top: var(--space-2);
+        transform: translateX(-0%);
+        bottom: 13%;
+    }
+
+    .page-datenschutz h1 {
+        font-size: clamp(1.4rem, 4vw, 2rem);
+    }
+
+}
 
 
-@media (max-width: 1920px) {}
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
 
-@media (max-width: 744px) {}
+    .heading-arch-2 {
+         position: absolute;
+        width: clamp(21rem, 75vw, 38rem);
+        height: auto;
+        left: -10%;
+        padding-top: var(--space-2);
+        transform: translateX(-0%);
+        bottom: 13%;
+    }
+
+    .page-datenschutz h1 {
+        font-size: clamp(1.4rem, 4vw, 2rem);
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 743px) {
+
+
+    .heading-arch-2 {
+        position: absolute;
+        width: clamp(21rem, 65vw, 29rem);
+        height: auto;
+        left: -17%;
+        padding-top: var(--space-2);
+        transform: translateX(-0%);
+        bottom: 33%;
+    }
+
+    .page-datenschutz h1 {
+        font-size: clamp(1.4rem, 4vw, 2rem);
+    }
+}
