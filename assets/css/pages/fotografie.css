@@ -416,9 +416,8 @@
         object-fit: cover;
         max-width: 100%;
         height: auto;
-
-
     }
+
 
     .hero-thumbnail {
         margin-top: var(--space-32);
@@ -628,8 +627,6 @@
         padding: 1.5rem;
 
     }
-
-    
 
 
     .page-fotografie [role="tabpanel"] img {
