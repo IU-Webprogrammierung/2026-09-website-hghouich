@@ -47,7 +47,7 @@
 .reveal {
     opacity: 0;
     transform: translateY(2rem);
-    transition: opacity 0.5s ease, transform 0.5s ease-in;
+    transition: opacity 0.5s ease, transform 0.10s ease-in;
 }
 
 .reveal.is-visible {
